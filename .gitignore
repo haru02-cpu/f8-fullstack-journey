@@ -1,0 +1,21 @@
+# Dependencies (used from Phase 2+ once Node/React are introduced)
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+build/
+.next/
+
+# Environment variables
+.env
+.env.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
