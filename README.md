@@ -1,8 +1,8 @@
-# 🚀 F8 Fullstack Journey — Learning Log
+# 🚀 F8 Fullstack Journey
 
-This repository documents my full learning journey through the **F8 Fullstack Web Development** course. Each chapter has its own folder, committed daily to track progress and build a public portfolio.
+> A code-first record of my journey through the F8 Fullstack Web Development course.
 
-🔗 **Live demo (GitHub Pages):** `https://<username>.github.io/f8-fullstack-journey/`
+Every study session becomes a commit. Every chapter becomes a small collection of practical exercises — from HTML and CSS fundamentals to full-stack projects.
 
 ---
 
@@ -86,48 +86,9 @@ This repository documents my full learning journey through the **F8 Fullstack We
 
 ---
 
-## 📁 Folder structure
+## How to read this repository
 
-```
-f8-fullstack-journey/
-├── README.md                  ← this file (main tracker)
-├── index.html                 ← GitHub Pages homepage, links to every chapter
-├── .gitignore
-├── phase-1-html-css/
-│   ├── 02-client-server-html-basics/
-│   │   ├── progress.md              ← daily log (what was watched/coded each day)
-│   │   ├── quiz-and-theory.md       ← short theory/quiz-style lessons, answered in my own words
-│   │   ├── 01-first-html-page/
-│   │   │   ├── index-1.1.html … index-1.3.html
-│   │   │   └── notes.md             ← what I practiced + challenges faced
-│   │   ├── 02-html-comments-practice/
-│   │   │   ├── index-2.1.html
-│   │   │   └── notes.md
-│   │   ├── 03-html-entities-code-tag/
-│   │   │   ├── index-3.1.html … index-3.3.html
-│   │   │   └── notes.md
-│   │   └── project/                 ← graded assignment for the chapter
-│   │       ├── index.html
-│   │       ├── style.css
-│   │       └── notes.md
-│   ├── 03-attribute-inline-block-css/
-│   └── ...
-├── phase-2-javascript/
-├── phase-3-react/
-└── phase-4-backend/
-```
+- Chapter folders contain the exercises and projects.
+- The [commit history](../../commits/main) records the day-to-day journey.
+- Personal notes live outside this repository; this space is for code and progress only.
 
-## 📝 Naming & commit conventions
-
-- **Chapter folder:** `<2-digit-number>-<chapter-slug>` — e.g. `02-client-server-html-basics`
-- **Sub-exercise folder (inside a chapter):** `<2-digit-number>-<exercise-slug>` — e.g. `01-first-html-page`. Each holds its own `notes.md` plus one HTML/CSS file per numbered sub-exercise (`index-1.1.html`, `index-1.2.html`, …).
-- **`notes.md` (per sub-exercise folder):** two sections — `## What I practiced` (bullet list, one line per concept/tag) and `## Challenges faced` (anything that broke, confused, or is worth remembering — leave `-` if genuinely nothing came up).
-- **`quiz-and-theory.md` (per chapter):** collects the short theory/quiz-only lessons that don't produce their own code exercise. Answer each question in your own words, then keep a "video lessons watched" checklist at the bottom for the lessons not tied to a specific question or exercise.
-- **`progress.md` (per chapter):** one entry per day actually worked on the chapter — what was watched, which quiz parts were answered, which folder was coded, plus a short notes/difficulties line. Doesn't need to map 1:1 to calendar days; skip days you didn't touch it.
-- **`project/` (per chapter, if graded):** the chapter's graded assignment, with its own `notes.md` covering the brief, what was built, and any feedback received.
-- **Daily commit message:**
-    ```
-    Day 01 - Chapter 02: Client-Server & HTML Basics
-    ```
-    or Conventional Commits style: `feat(ch02): learn Client-Server and HTML basics`
-- When a chapter is fully done, check its box in the [chapter checklist](#-chapter-checklist) above.
