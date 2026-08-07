@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three ways to write CSS</title>
+
+  <!-- 1) External CSS: linking a separate style.css file (practice 3.58) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- 2) Internal CSS: a style block inside the HTML file (practice 3.59) -->
+  <style>
+    h1.internal-demo {
+      color: seagreen;
+      font-family: Georgia, serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="external-demo">This h1 is styled with External CSS</h1>
+
+  <h1 class="internal-demo">This h1 is styled with Internal CSS</h1>
+
+  <!-- 3) Inline CSS: style attribute directly on the tag (practice 3.60) -->
+  <h1 style="color: darkorange; font-family: 'Courier New', monospace;">
+    This h1 is styled with Inline CSS
+  </h1>
+
+</body>
+</html>
