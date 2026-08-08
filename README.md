@@ -91,4 +91,3 @@ Every study session becomes a commit. Every chapter becomes a small collection o
 - Chapter folders contain the exercises and projects.
 - The [commit history](../../commits/main) records the day-to-day journey.
 - Personal notes live outside this repository; this space is for code and progress only.
-
