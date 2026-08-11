@@ -23,7 +23,7 @@ Every study session becomes a commit. Every chapter becomes a small collection o
 
 - [x]   1. Introduction
 - [x]   2. Client - Server, HTML Basics
-- [ ]   3. Attribute, Inline, Block, CSS Basics
+- [x]   3. Attribute, Inline, Block, CSS Basics
 - [ ]   4. Inheritance, CSS Reset, and CSS Selectors
 - [ ]   5. Box Model and Related Properties
 - [ ]   6. Installing and Using VS Code
