@@ -1,5 +1,9 @@
 /* External CSS lives in this separate file, linked via <link> in index.html */
 .external-demo {
-  color: royalblue;
-  font-family: Arial, sans-serif;
+    color: royalblue;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #5ebbff;
 }
