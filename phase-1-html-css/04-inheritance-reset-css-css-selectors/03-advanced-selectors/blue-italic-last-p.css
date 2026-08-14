@@ -1,0 +1,10 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 120%;
+    line-height: 2;
+}
+
+p:last-of-type {
+    color: green;
+    font-style: italic;
+}
