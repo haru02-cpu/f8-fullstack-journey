@@ -1,0 +1,14 @@
+.parent {
+    height: 200px;
+    background-color: orange;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.child-1,
+.child-2 {
+    width: 50%;
+    height: 50px;
+    background-color: violet;
+    margin-top: 30px;
+}
