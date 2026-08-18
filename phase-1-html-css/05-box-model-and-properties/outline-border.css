@@ -1,0 +1,8 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    border: 5px dashed dodgerblue;
+    background-color: purple;
+    outline: 4px solid red;
+}

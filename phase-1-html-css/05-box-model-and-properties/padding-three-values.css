@@ -1,0 +1,9 @@
+.box {
+    width: 300px;
+    border: 2px solid black;
+    padding: 30px 40px 50px 40px;
+}
+
+p {
+    font-size: 16px;
+}

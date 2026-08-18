@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 120%;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    border-radius: 60px 120px 85px 120px;
+}
