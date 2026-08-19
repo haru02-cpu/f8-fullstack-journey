@@ -1,0 +1,28 @@
+.avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 8px;
+}
+
+.form-label {
+    display: block;
+}
+
+.text-input {
+    padding: 2px 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn {
+    border: none;
+    background-color: orange;
+    padding: 4px 20px;
+    border-radius: 3px;
+}
