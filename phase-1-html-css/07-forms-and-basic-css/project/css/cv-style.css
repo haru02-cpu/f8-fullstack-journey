@@ -1,0 +1,73 @@
+.content {
+    padding: 40px 0;
+    background-color: rgb(181, 132, 139);
+}
+
+.cv {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px 80px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+span {
+    margin-top: 7px;
+    display: block;
+    border-bottom: 2px solid black;
+}
+
+/* Header */
+.cv-header {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.cv-header > h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* Job Section */
+.job-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.job-details {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.job-details li {
+    line-height: 1.5;
+}
+
+/* Edu Section */
+.edu-title {
+    margin-top: 20px;
+}
+
+.edu-details {
+    margin-top: 15px;
+}
+
+.edu-details b {
+    font-weight: 600;
+}
+
+.edu-details i {
+    font-style: italic;
+}
