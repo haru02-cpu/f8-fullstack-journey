@@ -4,10 +4,6 @@
     background-color: rgb(69, 131, 197);
 }
 
-/* .menu {
-    background-color: rgb(104, 165, 180);
-} */
-
 .menu-navbar {
     max-width: 1000px;
     width: calc(100% - 48px);
