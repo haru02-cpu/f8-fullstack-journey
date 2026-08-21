@@ -1,0 +1,110 @@
+.content {
+    height: 100vh;
+    padding: 40px 0;
+    background-color: #ccc;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.form-header .title,
+.subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-top: 7px;
+    color: #727272;
+}
+
+.form-info {
+    margin-top: 25px;
+}
+
+.info-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.info-wrapper > div {
+    flex: 1;
+}
+
+.label-title {
+    font-weight: 600;
+}
+
+.input-wrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 50px;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-wrapper i {
+    font-size: 18px;
+}
+
+.input-wrapper .text-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.info-wrapper:nth-child(2) {
+    margin-top: 20px;
+}
+
+.form-confirm,
+.form-gender,
+.form-dob {
+    margin-top: 30px;
+}
+
+.gender-wrapper {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gender-group input {
+    /* Xóa margin mặc định của radio input */
+    margin: 0;
+}
+
+.gender-group span {
+    font-size: 16px;
+}
+
+.input-date {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #9ca3af;
+}
+
+.input-date::-webkit-calendar-picker-indicator {
+    display: none;
+}
