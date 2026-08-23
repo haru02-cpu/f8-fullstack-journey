@@ -73,7 +73,8 @@
 
 .form-confirm,
 .form-gender,
-.form-dob {
+.form-dob,
+.form-address {
     margin-top: 30px;
 }
 
@@ -102,9 +103,27 @@
     border: none;
     outline: none;
     font-size: 16px;
-    color: #9ca3af;
 }
 
 .input-date::-webkit-calendar-picker-indicator {
     display: none;
+}
+
+.textarea-wrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.textarea-wrapper textarea {
+    flex: 1;
+    min-height: 100px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
 }
