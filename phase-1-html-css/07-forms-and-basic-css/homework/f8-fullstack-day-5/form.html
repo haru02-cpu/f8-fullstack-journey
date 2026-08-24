@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body class="form-page">
+        <main class="form-container">
+            <header class="form-header">
+                <h1>Create Your Profile</h1>
+                <p>Complete your account information</p>
+            </header>
+
+            <form action="#" method="post" autocomplete="off">
+                <div class="form-grid">
+                    <label class="form-field">
+                        <span>Display Name</span>
+                        <input
+                            type="text"
+                            name="display-name"
+                            placeholder="Enter your display name"
+                        />
+                    </label>
+
+                    <label class="form-field">
+                        <span>Email</span>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="you@example.com"
+                        />
+                    </label>
+
+                    <label class="form-field">
+                        <span>Phone Number</span>
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="e.g., 0123 456 789"
+                        />
+                    </label>
+
+                    <label class="form-field">
+                        <span>Password</span>
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Create a strong password"
+                        />
+                    </label>
+                </div>
+
+                <label class="form-field">
+                    <span>Confirm Password</span>
+                    <input
+                        type="password"
+                        name="confirm-password"
+                        placeholder="Re-enter your password"
+                    />
+                </label>
+
+                <fieldset class="form-group">
+                    <legend>Gender</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male" />
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" />
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other" />
+                        Other
+                    </label>
+                </fieldset>
+
+                <label class="form-field">
+                    <span>Date of Birth</span>
+                    <input type="date" name="date-of-birth" />
+                </label>
+
+                <label class="form-field">
+                    <span>Address</span>
+                    <textarea
+                        name="address"
+                        placeholder="Enter your full address"
+                    ></textarea>
+                </label>
+
+                <label class="upload-box">
+                    <span>Profile Picture (Avatar)</span>
+                    <input
+                        type="file"
+                        name="avatar"
+                        accept="image/png, image/jpeg, image/gif"
+                    />
+                    <strong>Click to upload your photo</strong>
+                    <small>JPG, PNG or GIF. Max size 5MB.</small>
+                </label>
+
+                <fieldset class="form-group preferences">
+                    <legend>Communication Preferences</legend>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="preferences"
+                            value="newsletter"
+                        />
+                        Subscribe to Newsletter
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="preferences"
+                            value="promotional-emails"
+                        />
+                        Receive Promotional Emails
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="preferences"
+                            value="product-updates"
+                        />
+                        Get Product Updates
+                    </label>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Create Account</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

@@ -18,126 +18,212 @@
                     <h1 class="title">Create Your Profile</h1>
                     <p class="subtitle">Complete your account information</p>
                 </div>
-                <div class="form-info">
-                    <div class="info-wrapper">
-                        <div class="info-name">
-                            <label
-                                ><span class="label-title">Display Name</span>
-                                <div class="input-wrapper">
-                                    <i class="fa-regular fa-user"></i>
-                                    <input
-                                        class="text-input"
-                                        class="form-box"
-                                        type="text"
-                                        placeholder="Enter your displey name"
-                                    />
-                                </div>
-                            </label>
+                <form autocomplete="off">
+                    <div class="form-info">
+                        <div class="info-wrapper">
+                            <div class="info-name">
+                                <label
+                                    ><span class="label-title"
+                                        >Display Name</span
+                                    >
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-user"></i>
+                                        <input
+                                            class="text-input"
+                                            spellcheck="false"
+                                            type="text"
+                                            name="display-name"
+                                            placeholder="Enter your display name"
+                                        />
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="info-email">
+                                <label
+                                    ><span class="label-title">Email</span>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <input
+                                            class="text-input"
+                                            spellcheck="false"
+                                            type="email"
+                                            name="email"
+                                            placeholder="you@example.com"
+                                        />
+                                    </div>
+                                </label>
+                            </div>
                         </div>
-                        <div class="info-email">
-                            <label
-                                ><span class="label-title">Email</span>
-                                <div class="input-wrapper">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <input
-                                        class="text-input"
-                                        class="form-box"
-                                        type="email"
-                                        placeholder="you@example.com"
-                                    />
-                                </div>
-                            </label>
+                        <div class="info-wrapper">
+                            <div class="info-call">
+                                <label
+                                    ><span class="label-title"
+                                        >Phone Number</span
+                                    >
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <input
+                                            class="text-input"
+                                            spellcheck="false"
+                                            type="tel"
+                                            name="phone"
+                                            placeholder="e.g., 0123 456 789"
+                                        />
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="info-password">
+                                <label
+                                    ><span class="label-title">Password</span>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <input
+                                            class="text-input"
+                                            spellcheck="false"
+                                            type="password"
+                                            name="password"
+                                            placeholder="Create a strong password"
+                                        />
+                                    </div>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <div class="info-wrapper">
-                        <div class="info-call">
-                            <label
-                                ><span class="label-title">Phone Number</span>
-                                <div class="input-wrapper">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <input
-                                        class="text-input"
-                                        type="number"
-                                        placeholder="e.g., 0123 456 789"
-                                    />
-                                </div>
-                            </label>
-                        </div>
-                        <div class="info-password">
-                            <label
-                                ><span class="label-title">Password</span>
-                                <div class="input-wrapper">
-                                    <i class="fa-solid fa-lock"></i>
-                                    <input
-                                        class="text-input"
-                                        type="text"
-                                        placeholder="Create a strong password"
-                                    />
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-confirm">
-                    <label
-                        ><span class="label-title">Confirm Password</span>
-                        <div class="input-wrapper">
-                            <i class="fa-solid fa-lock"></i>
-                            <input
-                                class="text-input"
-                                type="text"
-                                placeholder="Re-enter your password"
-                            />
-                        </div>
-                    </label>
-                </div>
-                <div class="form-gender">
-                    <span class="label-title">Gender</span>
-                    <div class="gender-wrapper">
-                        <label class="gender-group">
-                            <input type="radio" name="gender" value="Male" />
-                            <span>Male</span>
+                    <div class="form-confirm">
+                        <label
+                            ><span class="label-title">Confirm Password</span>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-lock"></i>
+                                <input
+                                    class="text-input"
+                                    type="password"
+                                    name="confirm-password"
+                                    spellcheck="false"
+                                    placeholder="Re-enter your password"
+                                />
+                            </div>
                         </label>
+                    </div>
+                    <div class="form-gender">
+                        <span class="label-title">Gender</span>
+                        <div class="gender-wrapper">
+                            <label class="gender-group">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Male"
+                                />
+                                <span>Male</span>
+                            </label>
 
-                        <label class="gender-group">
-                            <input type="radio" name="gender" value="Female" />
-                            <span>Female</span>
-                        </label>
+                            <label class="gender-group">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Female"
+                                />
+                                <span>Female</span>
+                            </label>
 
-                        <label class="gender-group">
-                            <input type="radio" name="gender" value="Other" />
-                            <span>Other</span>
+                            <label class="gender-group">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Other"
+                                />
+                                <span>Other</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-dob">
+                        <label class="dob-wrapper">
+                            <span class="label-title">Date of Birth</span>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-calendar"></i>
+                                <input
+                                    class="input-date"
+                                    type="date"
+                                    name="date-of-birth"
+                                />
+                            </div>
                         </label>
                     </div>
-                </div>
-                <div class="form-dob">
-                    <label class="dob-wrapper">
-                        <span class="label-title">Date of Birth</span>
-                        <div class="input-wrapper">
-                            <i class="fa-regular fa-calendar"></i>
+                    <div class="form-address">
+                        <label>
+                            <span class="label-title">Address</span>
+                            <div class="textarea-wrapper">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <textarea
+                                    name="address"
+                                    placeholder="Enter your full address"
+                                    spellcheck="false"
+                                ></textarea>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-avatar">
+                        <span class="label-title"
+                            >Profile Picture (Avatar)
+                        </span>
+
+                        <label class="avatar-wrapper">
                             <input
-                                class="input-date"
-                                type="date"
-                                name=""
-                                id=""
+                                type="file"
+                                name="avatar"
+                                accept="image/png, image/jpeg, image/gif"
                             />
+                            <div class="avatar-placeholder">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <strong style="font-weight: 600"
+                                >Click to upload your photo</strong
+                            >
+                            <span style="color: #717070"
+                                >JPG, PNG or GIF, Max size 5MB</span
+                            >
+                        </label>
+                    </div>
+                    <div class="form-preferences">
+                        <span class="label-title"
+                            >Communication Preferences</span
+                        >
+                        <div class="prefer-wrapper">
+                            <label class="prefer-01">
+                                <input
+                                    type="checkbox"
+                                    name="preferences"
+                                    value="newsletter"
+                                />
+                                <span>Subscribe to Newletter</span></label
+                            >
+                            <label class="prefer-02">
+                                <input
+                                    type="checkbox"
+                                    name="preferences"
+                                    value="promo-emails"
+                                />
+                                <span>Receive Promotional Emails</span></label
+                            >
+                            <label class="prefer-03">
+                                <input
+                                    type="checkbox"
+                                    name="preferences"
+                                    value="product-updates"
+                                />
+                                <span>Get Product Updates</span></label
+                            >
                         </div>
-                    </label>
-                </div>
-                <div class="form-address">
-                    <label>
-                        <span class="label-title">Address</span>
-                        <div class="textarea-wrapper">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <textarea
-                                placeholder="Enter your full address"
-                            ></textarea>
+                        <div class="line"></div>
+                    </div>
+                    <div class="form-choices">
+                        <div class="choices-wrapper">
+                            <button class="choice-create">
+                                Create Account
+                            </button>
+                            <button class="choice-reset">Reset</button>
                         </div>
-                    </label>
-                </div>
-                <div class="form-avatar"></div>
-                <div class="form-preferences"></div>
-                <div class="form-choices"></div>
+                    </div>
+                </form>
             </div>
         </div>
     </body>
