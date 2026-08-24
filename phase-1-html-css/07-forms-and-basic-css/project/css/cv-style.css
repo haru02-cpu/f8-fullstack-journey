@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+}
 .content {
+    min-height: 100vh;
     padding: 40px 0;
     background-color: rgb(181, 132, 139);
 }
 
 .cv {
-    width: 900px;
+    max-width: 900px;
+    width: calc(100% - 48px);
     margin: 0 auto;
     background-color: #fff;
     padding: 50px 80px;
@@ -19,9 +24,8 @@ h2 {
     font-weight: 800;
 }
 
-span {
+.section-line {
     margin-top: 7px;
-    display: block;
     border-bottom: 2px solid black;
 }
 

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .content {
     width: 100%;
     height: 100vh;
@@ -27,7 +31,7 @@
     color: #fff;
 }
 
-.menu-item:hover a {
+.menu-item:hover > a {
     color: black;
     background-color: #fff;
 }
@@ -36,10 +40,15 @@
     display: none;
     width: max-content;
     position: absolute;
-    background: #fff;
+    background-color: #fff;
 }
 
-.sub-menu li:hover a {
+.sub-menu a {
+    color: black;
+    background-color: #fff;
+}
+
+.sub-menu li:hover > a {
     background-color: #ccc;
 }
 
