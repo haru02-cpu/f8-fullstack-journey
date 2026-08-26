@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./gender-radio-buttons.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Đăng ký</h1>
+
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Giới tính</label>
+                    <label for="gender">
+                        <input
+                            type="radio"
+                            name="gender"
+                            id="gender"
+                        />Nam<br />
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="gender" id="gender" />Nữ<br />
+                    </label>
+                    <label for="gender">
+                        <input
+                            type="radio"
+                            name="gender"
+                            id="gender"
+                        />Khác<br />
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" />
+                </div>
+
+                <div class="form-group">
+                    <label for="password_confirmation">Nhập lại mật khẩu</label>
+                    <input type="password" id="password_confirmation" />
+                </div>
+
+                <div class="form-group">
+                    <button class="btn" type="submit">Đăng ký</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
