@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.bg {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.bg-color {
+    background: orange;
+}
+
+.bg-img {
+    background: url(https://files.fullstack.edu.vn/f8-prod/manual_uploads/htmlcss-pro/img-max-width-2.jpg)
+        center / cover;
+}
+
+@media print {
+    body {
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+}
