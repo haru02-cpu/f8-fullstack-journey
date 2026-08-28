@@ -1,0 +1,17 @@
+.bg-1 {
+    width: 400px;
+    height: 200px;
+    background-image: url("https://files.fullstack.edu.vn/f8-prod/manual_uploads/htmlcss-pro/bg-size-1.jpg");
+}
+
+.bg-2 {
+    width: 250px;
+    height: 300px;
+    margin-top: 8px;
+    background-image: url("https://files.fullstack.edu.vn/f8-prod/manual_uploads/htmlcss-pro/bg-size-2.jpg");
+}
+
+.bg {
+    border: 2px dotted #ccc;
+    background-size: cover;
+}
