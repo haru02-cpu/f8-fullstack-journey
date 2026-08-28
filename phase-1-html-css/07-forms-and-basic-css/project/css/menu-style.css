@@ -31,7 +31,8 @@
     color: #fff;
 }
 
-.menu-item:hover > a {
+.menu-item:hover > a,
+.menu-item.active > a {
     color: black;
     background-color: #fff;
 }
