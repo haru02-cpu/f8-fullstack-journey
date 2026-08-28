@@ -1,0 +1,8 @@
+.container {
+    width: 400px;
+    height: 400px;
+    background-image: url(https://files.fullstack.edu.vn/f8-prod/manual_uploads/mountain_view.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50px 100px;
+}
