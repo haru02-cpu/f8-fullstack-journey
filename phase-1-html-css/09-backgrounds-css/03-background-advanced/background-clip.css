@@ -1,0 +1,10 @@
+.box {
+    width: 600px;
+    height: 200px;
+    padding: 30px;
+    border: 20px dotted brown;
+    background-image: url(https://files.fullstack.edu.vn/f8-prod/manual_uploads/deer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
