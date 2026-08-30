@@ -1,0 +1,7 @@
+.container {
+    height: 180px;
+    padding: 30px;
+    border: 40px dotted brown;
+    background: url(https://files.fullstack.edu.vn/f8-prod/manual_uploads/parrot.png)
+        center/contain no-repeat border-box content-box;
+}

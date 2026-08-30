@@ -1,0 +1,10 @@
+.bg {
+    height: 400px;
+    padding: 40px;
+    border: 20px dotted darkorange;
+    background-image: url("https://files.fullstack.edu.vn/f8-prod/manual_uploads/cat.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: content-box;
+}

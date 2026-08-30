@@ -1,0 +1,7 @@
+.bg {
+    height: 400px;
+    padding: 30px;
+    border: 2px dashed brown;
+    background: url(https://files.fullstack.edu.vn/f8-prod/manual_uploads/dogs.png)
+        center/contain no-repeat;
+}
