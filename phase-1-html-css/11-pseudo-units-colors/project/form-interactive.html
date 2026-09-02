@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Interactive</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/form-interactive.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="content">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1 class="title">Create Your Profile</h1>
+                    <p class="subtitle">Complete your account information</p>
+                </div>
+                <form autocomplete="off">
+                    <div class="form-info">
+                        <div class="info-wrapper">
+                            <div class="info-name">
+                                <label
+                                    ><span class="label-title"
+                                        >Display Name</span
+                                    >
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-user"></i>
+                                        <input
+                                            class="text-input"
+                                            spellcheck="false"
+                                            type="text"
+                                            name="display-name"
+                                            placeholder="Enter your display name"
+                                            minlength="2"
+                                            required
+                                        />
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="info-email">
+                                <label
+                                    ><span class="label-title">Email</span>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <input
+                                            class="text-input"
+                                            spellcheck="false"
+                                            type="email"
+                                            name="email"
+                                            placeholder="you@example.com"
+                                            required
+                                        />
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="info-wrapper">
+                            <div class="info-call">
+                                <label
+                                    ><span class="label-title"
+                                        >Phone Number</span
+                                    >
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <input
+                                            class="text-input"
+                                            spellcheck="false"
+                                            type="tel"
+                                            name="phone"
+                                            placeholder="e.g., 0123 456 789"
+                                            pattern="[0-9+\s-]{8,15}"
+                                            required
+                                        />
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="info-password">
+                                <label
+                                    ><span class="label-title">Password</span>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <input
+                                            class="text-input"
+                                            spellcheck="false"
+                                            type="password"
+                                            name="password"
+                                            placeholder="Create a strong password"
+                                            minlength="8"
+                                            required
+                                        />
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-confirm">
+                        <label
+                            ><span class="label-title">Confirm Password</span>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-lock"></i>
+                                <input
+                                    class="text-input"
+                                    type="password"
+                                    name="confirm-password"
+                                    spellcheck="false"
+                                    placeholder="Re-enter your password"
+                                    minlength="8"
+                                    required
+                                />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-gender">
+                        <span class="label-title">Gender</span>
+                        <div class="gender-wrapper">
+                            <label class="gender-group">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Male"
+                                    required
+                                />
+                                <span>Male</span>
+                            </label>
+
+                            <label class="gender-group">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Female"
+                                    required
+                                />
+                                <span>Female</span>
+                            </label>
+
+                            <label class="gender-group">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Other"
+                                    required
+                                />
+                                <span>Other</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-dob">
+                        <label class="dob-wrapper">
+                            <span class="label-title">Date of Birth</span>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-calendar"></i>
+                                <input
+                                    class="input-date"
+                                    type="date"
+                                    name="date-of-birth"
+                                    required
+                                />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-address">
+                        <label>
+                            <span class="label-title">Address</span>
+                            <div class="textarea-wrapper">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <textarea
+                                    name="address"
+                                    placeholder="Enter your full address"
+                                    spellcheck="false"
+                                    minlength="5"
+                                    required
+                                ></textarea>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-avatar">
+                        <span class="label-title"
+                            >Profile Picture (Avatar)
+                        </span>
+
+                        <label class="avatar-wrapper">
+                            <input
+                                type="file"
+                                name="avatar"
+                                accept="image/png, image/jpeg, image/gif"
+                                required
+                            />
+                            <div class="avatar-placeholder">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <strong style="font-weight: 600"
+                                >Click to upload your photo</strong
+                            >
+                            <span style="color: #717070"
+                                >JPG, PNG or GIF, Max size 5MB</span
+                            >
+                        </label>
+                    </div>
+                    <div class="form-preferences">
+                        <span class="label-title"
+                            >Communication Preferences</span
+                        >
+                        <div class="prefer-wrapper">
+                            <label class="prefer-01">
+                                <input
+                                    type="checkbox"
+                                    name="preferences"
+                                    value="newsletter"
+                                    required
+                                />
+                                <span>Subscribe to Newletter</span></label
+                            >
+                            <label class="prefer-02">
+                                <input
+                                    type="checkbox"
+                                    name="preferences"
+                                    value="promo-emails"
+                                    required
+                                />
+                                <span>Receive Promotional Emails</span></label
+                            >
+                            <label class="prefer-03">
+                                <input
+                                    type="checkbox"
+                                    name="preferences"
+                                    value="product-updates"
+                                    required
+                                />
+                                <span>Get Product Updates</span></label
+                            >
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="form-choices">
+                        <div class="choices-wrapper">
+                            <button type="submit" class="choice-create">
+                                Create Account
+                            </button>
+                            <button type="reset" class="choice-reset">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
