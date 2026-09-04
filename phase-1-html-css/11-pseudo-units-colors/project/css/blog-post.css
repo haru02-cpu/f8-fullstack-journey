@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.content {
+    width: calc(100% - 48px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.post-wrapper {
+    background-color: #fffefc;
+    padding: 40px 0;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.post-label {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.post-menu {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.post-menu .menu-item a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+.post-menu .menu-item a::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    height: 2px;
+    background-color: #c8553d;
+    transform: scaleX(0);
+    transition: 0.3s ease;
+}
+
+.post-menu .menu-item a:hover,
+.post-menu .menu-item a.active {
+    color: #c8553d;
+}
+
+.post-menu .menu-item a:hover::after,
+.post-menu .menu-item a.active::after {
+    transform: scaleX(1);
+}
+
+.post-img {
+    width: 100%;
+}
+
+.post-content {
+    max-width: 875px;
+    margin: 50px auto 0;
+}
+
+.content-title {
+    font-weight: 600;
+    color: #c8553d;
+}
+
+.content-subtitle {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 4.6rem;
+}
+
+.content-info {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-info span {
+    color: #667085;
+}
+
+.info-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.info-date::before,
+.info-time::before {
+    content: "\2022";
+    margin-right: 10px;
+}
