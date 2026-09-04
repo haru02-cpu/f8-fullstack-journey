@@ -68,7 +68,7 @@ body {
     border: 2px solid #2563eb;
 }
 
-.pricing-card:nth-child(2):before {
+.pricing-card:nth-child(2)::before {
     content: "BEST SELLER!";
     position: absolute;
     left: 50%;
@@ -147,6 +147,7 @@ body {
 }
 
 .feature-list {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -170,11 +171,6 @@ body {
 
 .feature-list li:hover {
     color: #2563eb;
-    text-decoration: underline;
-}
-
-.feature-list li:hover {
-    text-decoration: none;
 }
 
 .pricing-btn {
