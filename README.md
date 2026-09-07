@@ -8,7 +8,7 @@ Each chapter contains small, focused exercises and practice projects. Detailed n
 
 | Phase | Focus | Status |
 | --- | --- | --- |
-| 1 | HTML & CSS fundamentals | In progress — chapters 01–06 completed |
+| 1 | HTML & CSS fundamentals | In progress|
 | 2 | JavaScript Core | Planned |
 | 3 | ReactJS | Planned |
 | 4 | Backend & Fullstack | Planned |
@@ -21,6 +21,12 @@ phase-1-html-css/
   03-attribute-inline-block-css-basics/
   04-inheritance-reset-css-css-selectors/
   05-box-model-and-properties/
+  06-vscode-setup/
+  07-forms-and-basic-css/
+  08-work-with-images/
+  09-backgrounds-css/
+  10-overflow-and-scrolling/
+  11-pseudo-units-colors/
 ```
 
 - Each chapter folder holds its exercises and any small project for that lesson.
