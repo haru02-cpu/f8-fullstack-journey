@@ -8,7 +8,12 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
 }
 
 .content {
@@ -95,6 +100,7 @@ body {
 
 .content-info span {
     color: #667085;
+    font-size: 1.3rem;
 }
 
 .info-avatar {
@@ -107,4 +113,147 @@ body {
 .info-time::before {
     content: "\2022";
     margin-right: 10px;
+}
+
+.post-main-content {
+    margin-top: 20px;
+}
+
+.post-main-content ::selection {
+    color: #fff;
+    background-color: #c8553d;
+}
+
+.post-main-content p {
+    line-height: 1.7;
+    font-size: 1.7rem;
+}
+
+.post-main-content > p.highlight-first-line::first-line {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.post-main-content > p:first-child::first-letter {
+    float: left;
+    margin: 0.4rem 1.2rem 0 0;
+    color: #c8553d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 7.2rem;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+.post-main-content > p:nth-of-type(2) {
+    margin-top: 20px;
+    color: #c8553d;
+}
+
+.post-main-content blockquote {
+    position: relative;
+    margin: 24px 0;
+    padding-left: 70px;
+}
+
+.post-main-content blockquote p {
+    font-size: 2.1rem;
+    font-style: italic;
+    color: #263244;
+}
+
+.post-main-content blockquote::before {
+    content: "\201C";
+    position: absolute;
+    left: 0;
+    color: #c8553d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.post-main-content :where(h1, h2, h3, h4, h5, h6):not(h1) {
+    margin: 24px 0 14px;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.post-subtitle {
+    font-size: 2.9rem;
+}
+
+.comments::before {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 875px;
+    margin: 30px auto 20px;
+    border: 1px solid #ccc;
+}
+
+.comments {
+    max-width: 875px;
+    margin: 0 auto;
+}
+
+.cmt-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.cmt-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cmt-info {
+    padding: 15px 20px;
+    border: 1px solid #e8e1dc;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s ease;
+}
+
+.cmt-info:hover {
+    border: 1px solid #c8553d;
+}
+
+.cmt-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.cmt-content {
+    flex: 1;
+}
+
+.cmt-header {
+    display: flex;
+    align-items: center;
+}
+
+.cmt-name {
+    font-weight: 600;
+}
+
+.cmt-date {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #667085;
+}
+
+.cmt-reply {
+    margin-left: auto;
+    color: #c8553d;
+    font-weight: 500;
+}
+
+.cmt-sentence {
+    margin-top: 10px;
+    color: #3d4858;
 }
