@@ -17,6 +17,7 @@ Each chapter contains small, focused exercises and practice projects. Detailed n
 
 ```text
 phase-1-html-css/
+  01-introduction/
   02-client-server-html-basics/
   03-attribute-inline-block-css-basics/
   04-inheritance-reset-css-css-selectors/
