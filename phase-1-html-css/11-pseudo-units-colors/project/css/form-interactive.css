@@ -94,7 +94,7 @@ span {
 }
 
 .input-wrapper:has(.text-input:invalid:not(:placeholder-shown)),
-.input-wrapper:has(.input-date:invalid),
+.input-wrapper:has(.input-date:focus:invalid),
 .textarea-wrapper:has(textarea:invalid:not(:placeholder-shown)) {
     border: 1px solid red;
 }
