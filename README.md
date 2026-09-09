@@ -28,6 +28,8 @@ phase-1-html-css/
   09-backgrounds-css/
   10-overflow-and-scrolling/
   11-pseudo-units-colors/
+  12-fonts-and-css-variables/
+  13-flexbox-layouts
 ```
 
 - Each chapter folder holds its exercises and any small project for that lesson.
