@@ -1,8 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="CV của Haru Huynh, Software Engineer."
+        />
         <title>CV Flex</title>
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/cv-flex.css" />
@@ -13,131 +17,158 @@
         />
     </head>
     <body>
-        <div class="content">
-            <div class="cv-wrapper">
-                <div class="cv-sidebar">
-                    <div class="sidebar-header">
+        <main class="content">
+            <article class="cv-wrapper" aria-label="CV của Haru Huynh">
+                <aside class="cv-sidebar">
+                    <header class="sidebar-header">
                         <img
                             src="./img/sidebar-avatar.jpg"
-                            alt="Profile Avatar"
+                            alt="Chân dung Haru Huynh"
                             class="header-avatar"
                         />
-                        <span class="header-name">Haru Huynh</span>
-                        <span class="header-role">Software Engineer</span>
-                    </div>
-                    <span class="sidebar-line"></span>
-                    <div class="sidebar-info">
-                        <div class="info-item">
-                            <i class="fa-regular fa-envelope"></i>
-                            <a href="#!" class="info-link info-email"
-                                >haruhuynh2208@gmail.com</a
-                            >
-                        </div>
+                        <h1 class="header-name">Haru Huynh</h1>
+                        <p class="header-role">Software Engineer</p>
+                    </header>
 
-                        <div class="info-item">
-                            <i class="fa-solid fa-phone"></i>
-                            <a href="#!" class="info-link info-phone"
-                                >+84 912 345 678</a
-                            >
-                        </div>
+                    <hr class="sidebar-line" />
 
-                        <div class="info-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <a href="#!" class="info-link info-location"
-                                >TP. Hồ Chí Minh, Việt Nam</a
-                            >
-                        </div>
+                    <address class="sidebar-info">
+                        <ul class="contact-list">
+                            <li class="info-item">
+                                <i
+                                    class="fa-regular fa-envelope"
+                                    aria-hidden="true"
+                                ></i>
+                                <a
+                                    href="mailto:haruhuynh2208@gmail.com"
+                                    class="info-link"
+                                    >haruhuynh2208@gmail.com</a
+                                >
+                            </li>
+                            <li class="info-item">
+                                <i
+                                    class="fa-solid fa-phone"
+                                    aria-hidden="true"
+                                ></i>
+                                <a href="tel:+84912345678" class="info-link"
+                                    >+84 912 345 678</a
+                                >
+                            </li>
+                            <li class="info-item">
+                                <i
+                                    class="fa-solid fa-location-dot"
+                                    aria-hidden="true"
+                                ></i>
+                                <span>TP. Hồ Chí Minh, Việt Nam</span>
+                            </li>
+                            <li class="info-item">
+                                <i
+                                    class="fa-brands fa-linkedin"
+                                    aria-hidden="true"
+                                ></i>
+                                <a
+                                    href="https://www.linkedin.com/in/haru-huynh/"
+                                    class="info-link"
+                                    >linkedin.com/in/haru-huynh</a
+                                >
+                            </li>
+                            <li class="info-item">
+                                <i
+                                    class="fa-solid fa-earth-asia"
+                                    aria-hidden="true"
+                                ></i>
+                                <a
+                                    href="https://haru-huynh.dev"
+                                    class="info-link"
+                                    >haru-huynh.dev</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
 
-                        <div class="info-item">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <a href="#!" class="info-link info-linkedin"
-                                >linkedin.com/in/haru-huynh</a
-                            >
-                        </div>
-                        <div class="info-item">
-                            <i class="fa-solid fa-earth-asia"></i>
-                            <a href="#!" class="info-link info-website"
-                                >haru-huynh.dev</a
-                            >
-                        </div>
-                    </div>
-                    <span class="sidebar-line"></span>
+                    <hr class="sidebar-line" />
 
-                    <div class="sidebar-skills">
-                        <div class="skills-title">KỸ NĂNG</div>
+                    <section
+                        class="sidebar-skills"
+                        aria-labelledby="skills-title"
+                    >
+                        <h2 id="skills-title" class="skills-title">KỸ NĂNG</h2>
+
                         <label for="html-skill" class="skill-name">HTML</label>
                         <div class="progress-wrapper">
                             <progress
                                 id="html-skill"
-                                class="progress-bar html-val"
+                                class="progress-bar"
                                 value="85"
                                 max="100"
                             >
-                                85%
-                            </progress>
-                            <span>85%</span>
+                                85%</progress
+                            ><span aria-hidden="true">85%</span>
                         </div>
 
-                        <label for="html-skill" class="skill-name">CSS</label>
+                        <label for="css-skill" class="skill-name">CSS</label>
                         <div class="progress-wrapper">
                             <progress
                                 id="css-skill"
-                                class="progress-bar css-val"
+                                class="progress-bar"
                                 value="80"
                                 max="100"
                             >
-                                80%
-                            </progress>
-                            <span>80%</span>
+                                80%</progress
+                            ><span aria-hidden="true">80%</span>
                         </div>
 
-                        <label for="html-skill" class="skill-name"
-                            >Javascript</label
+                        <label for="js-skill" class="skill-name"
+                            >JavaScript</label
                         >
                         <div class="progress-wrapper">
                             <progress
                                 id="js-skill"
-                                class="progress-bar js-val"
+                                class="progress-bar"
                                 value="75"
                                 max="100"
                             >
-                                75%
-                            </progress>
-                            <span>75%</span>
+                                75%</progress
+                            ><span aria-hidden="true">75%</span>
                         </div>
-                        <label for="html-skill" class="skill-name"
-                            >Node JS</label
+
+                        <label for="nodejs-skill" class="skill-name"
+                            >Node.js</label
                         >
                         <div class="progress-wrapper">
                             <progress
-                                id="njs-skill"
-                                class="progress-bar njs-val"
+                                id="nodejs-skill"
+                                class="progress-bar"
                                 value="70"
                                 max="100"
                             >
-                                70%
-                            </progress>
-
-                            <span>70%</span>
+                                70%</progress
+                            ><span aria-hidden="true">70%</span>
                         </div>
-                    </div>
-                    <span class="sidebar-line"></span>
+                    </section>
 
-                    <div class="sidebar-languages">
-                        <div class="languages-title">NGÔN NGỮ</div>
+                    <hr class="sidebar-line" />
+
+                    <section
+                        class="sidebar-languages"
+                        aria-labelledby="languages-title"
+                    >
+                        <h2 id="languages-title" class="languages-title">
+                            NGÔN NGỮ
+                        </h2>
+
                         <label for="vi-lang" class="lang-name"
                             >Tiếng Việt</label
                         >
                         <div class="progress-wrapper">
                             <progress
                                 id="vi-lang"
-                                class="progress-bar vietnamese"
+                                class="progress-bar"
                                 value="100"
                                 max="100"
                             >
-                                100%
-                            </progress>
-                            <span>100%</span>
+                                100%</progress
+                            ><span aria-hidden="true">100%</span>
                         </div>
 
                         <label for="eng-lang" class="lang-name"
@@ -146,30 +177,226 @@
                         <div class="progress-wrapper">
                             <progress
                                 id="eng-lang"
-                                class="progress-bar english"
+                                class="progress-bar"
                                 value="90"
                                 max="100"
                             >
-                                90%
-                            </progress>
-                            <span>90%</span>
+                                90%</progress
+                            ><span aria-hidden="true">90%</span>
                         </div>
-                    </div>
-                    <span class="sidebar-line"></span>
+                    </section>
 
-                    <div class="sidebar-quote">
-                        <blockquote>
-                            <p>
-                                "Thiết kế những trài nghiệm đơn giản, hữu ích và
-                                hướng đến mọi người."
+                    <hr class="sidebar-line" />
+
+                    <blockquote class="sidebar-quote">
+                        <p>
+                            Thiết kế những trải nghiệm đơn giản, hữu ích và
+                            hướng đến mọi người.
+                        </p>
+                        <footer>— Haru Huynh</footer>
+                    </blockquote>
+                </aside>
+
+                <div class="cv-main">
+                    <header class="main-header">
+                        <div class="header-wrapper">
+                            <h2 class="header-title">Hồ sơ cá nhân</h2>
+                            <span class="title-line" aria-hidden="true"></span>
+                        </div>
+                        <p class="header-intro">
+                            Tôi là Product Designer với hơn 3 năm kinh nghiệm
+                            trong việc thiết kế sản phẩm số, tập trung vào trải
+                            nghiệm người dùng và giải quyết vấn đề thực tế. Tôi
+                            yêu thích việc biến những ý tưởng phức tạp thành các
+                            giải pháp đơn giản, đẹp mắt và dễ sử dụng.
+                        </p>
+                        <blockquote class="header-highlight">
+                            <i
+                                class="fa-solid fa-quote-left"
+                                aria-hidden="true"
+                            ></i>
+                            <p class="header-quote">
+                                Luôn hướng đến những sản phẩm có ý nghĩa và tạo
+                                ra giá trị thật cho người dùng.
                             </p>
-                            <br />
-                            <p>- Haru Huynh</p>
                         </blockquote>
-                    </div>
+                    </header>
+
+                    <section
+                        class="main-section"
+                        aria-labelledby="experience-title"
+                    >
+                        <div class="body-wrapper">
+                            <h2 id="experience-title" class="body-title">
+                                KINH NGHIỆM LÀM VIỆC
+                            </h2>
+                            <span class="title-line" aria-hidden="true"></span>
+                        </div>
+                        <ul class="body-list work-experience">
+                            <li class="list-item">
+                                <article class="body-item">
+                                    <div class="item-wrapper">
+                                        <h3 class="item-title">
+                                            Product Designer
+                                        </h3>
+                                        <p class="item-timeline">
+                                            <time datetime="2022-06"
+                                                >06/2022</time
+                                            >
+                                            – Hiện tại
+                                        </p>
+                                    </div>
+                                    <p class="item-subtitle">Sunrise Tech</p>
+                                    <ul class="item-list">
+                                        <li>
+                                            Thiết kế trải nghiệm người dùng cho
+                                            nền tảng SaaS với hơn 100.000 người
+                                            dùng.
+                                        </li>
+                                        <li>
+                                            Làm việc chặt chẽ với đội ngũ
+                                            Product, Developer để đưa ý tưởng từ
+                                            concept đến sản phẩm thực tế.
+                                        </li>
+                                        <li>
+                                            Tạo và duy trì hệ thống thiết kế
+                                            (design system) nhất quán.
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li class="list-item">
+                                <article class="body-item">
+                                    <div class="item-wrapper">
+                                        <h3 class="item-title">
+                                            UI/UX Designer
+                                        </h3>
+                                        <p class="item-timeline">
+                                            <time datetime="2021-03"
+                                                >03/2021</time
+                                            >
+                                            –
+                                            <time datetime="2022-05"
+                                                >05/2022</time
+                                            >
+                                        </p>
+                                    </div>
+                                    <p class="item-subtitle">Moonlab Studios</p>
+                                    <ul class="item-list">
+                                        <li>
+                                            Thiết kế giao diện web và mobile app
+                                            cho nhiều khách hàng trong các lĩnh
+                                            vực khác nhau.
+                                        </li>
+                                        <li>
+                                            Thực hiện nghiên cứu người dùng, xây
+                                            dựng wireframe và prototype.
+                                        </li>
+                                        <li>
+                                            Hỗ trợ kiểm thử và tối ưu trải
+                                            nghiệm sau phát hành.
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li class="list-item">
+                                <article class="body-item">
+                                    <div class="item-wrapper">
+                                        <h3 class="item-title">
+                                            Junior Designer
+                                        </h3>
+                                        <p class="item-timeline">
+                                            <time datetime="2020-06"
+                                                >06/2020</time
+                                            >
+                                            –
+                                            <time datetime="2021-02"
+                                                >02/2021</time
+                                            >
+                                        </p>
+                                    </div>
+                                    <p class="item-subtitle">Creative Box</p>
+                                    <ul class="item-list">
+                                        <li>
+                                            Hỗ trợ thiết kế các ấn phẩm digital
+                                            marketing.
+                                        </li>
+                                        <li>
+                                            Chỉnh sửa hình ảnh, minh họa và tạo
+                                            mockup giao diện.
+                                        </li>
+                                        <li>
+                                            Học hỏi quy trình làm việc chuyên
+                                            nghiệp trong môi trường agency.
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section
+                        class="main-section"
+                        aria-labelledby="education-title"
+                    >
+                        <div class="body-wrapper">
+                            <h2 id="education-title" class="body-title">
+                                HỌC VẤN
+                            </h2>
+                            <span class="title-line" aria-hidden="true"></span>
+                        </div>
+                        <ul class="body-list education">
+                            <li class="list-item">
+                                <article class="body-item">
+                                    <div class="item-wrapper">
+                                        <h3 class="item-title">
+                                            Đại học Công nghiệp TP. Hồ Chí Minh
+                                        </h3>
+                                        <p class="item-timeline">
+                                            <time datetime="2022">2022</time> –
+                                            <time datetime="2026">2026</time>
+                                        </p>
+                                    </div>
+                                    <p class="item-subtitle">
+                                        Cử nhân Khoa học Máy tính
+                                    </p>
+                                    <p class="item-desc">
+                                        Trang bị nền tảng về tư duy lập trình,
+                                        nghiên cứu thị trường và quản lý dự án.
+                                    </p>
+                                </article>
+                            </li>
+                            <li class="list-item">
+                                <article class="body-item">
+                                    <div class="item-wrapper">
+                                        <h3 class="item-title">Khóa học F8</h3>
+                                        <p class="item-timeline">
+                                            <time datetime="2027">2027</time> –
+                                            <time datetime="2028">2028</time>
+                                        </p>
+                                    </div>
+                                    <p class="item-subtitle">
+                                        F8 Fullstack Education
+                                    </p>
+                                    <p class="item-desc">
+                                        Hoàn thành khóa học chuyên sâu về thiết
+                                        kế giao diện, trải nghiệm người dùng và
+                                        thiết kế sản phẩm số.
+                                    </p>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <footer class="main-footer">
+                        <span class="footer-line" aria-hidden="true"></span>
+                        <p class="footer-grateful">
+                            Cảm ơn bạn đã dành thời gian xem CV của tôi!
+                        </p>
+                        <span class="footer-line" aria-hidden="true"></span>
+                    </footer>
                 </div>
-                <div class="cv-main"></div>
-            </div>
-        </div>
+            </article>
+        </main>
     </body>
 </html>
