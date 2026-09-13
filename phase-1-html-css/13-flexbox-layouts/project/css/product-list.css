@@ -60,17 +60,26 @@ button {
     align-items: center;
 }
 
+.list-item {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.list-item a {
+    font-size: 1.8rem;
+}
+
 .list-item a:hover {
     text-decoration: underline;
 }
 
 .search-form {
     margin-left: 70px;
-    width: 350px;
+    width: 550px;
     max-width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd6cc;
     border-radius: 30px;
-    padding: 18px 12px;
+    padding: 12px 20px;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -84,4 +93,51 @@ button {
 
 .search-form input:focus {
     outline: none;
+}
+
+.cart-container {
+    margin-left: 30px;
+    position: relative;
+    padding: 15px;
+}
+
+.cart-icon {
+    font-size: 30px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #c0392b;
+    color: #fff;
+    width: 23px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cart-container::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    bottom: -25px;
+    right: -35px;
+    width: 2px;
+    background-color: #ddd6cc;
+}
+
+.header-slogan {
+    margin-left: 70px;
+    font-style: italic;
+    text-align: center;
+}
+
+.header-decor {
+    margin-left: 90px;
+    width: 70px;
 }
