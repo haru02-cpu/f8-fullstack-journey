@@ -18,7 +18,7 @@ body {
     --color-primary-light: #536b63;
     --color-text: #1a1a1a;
     --color-text-muted: #6b6b6b;
-    --color-border: #e0e0e0;
+    --color-border: 1px solid #ccc;
 }
 
 /* Form Elements */
@@ -57,12 +57,13 @@ a {
     min-height: 100vh;
 }
 
-.auth-brand {
-    position: relative;
+.auth-brand,
+.auth-form {
     flex: 1;
 }
 
 .auth-brand {
+    position: relative;
     background-color: #dceee6;
     padding: 70px 92px;
 }
@@ -147,7 +148,6 @@ a {
     background-color: var(--color-primary);
     color: #fff;
     border: 8px solid #fff;
-    border-radius: 50%;
 
     font-family: "Arial", sans-serif;
 }
@@ -182,16 +182,20 @@ a {
 }
 
 .auth-form {
-    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fcfdfb;
+    padding: 40px;
 }
 
 .auth-form__card {
+    width: 100%;
     max-width: 600px;
-    margin: 100px auto;
+
+    margin: 0;
     padding: 60px 40px;
-    display: flex;
-    flex-direction: column;
+
     background-color: #fff;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
     border-radius: 16px;
@@ -205,7 +209,7 @@ a {
 
 .auth-form__title {
     color: var(--color-text);
-    font-family: "Georgia", sans-serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 4rem;
     font-weight: 700;
     margin: 7px 0;
@@ -243,8 +247,8 @@ a {
     gap: 5px;
 }
 
-.form-group__email span,
-.form-group__password span {
+.form-group__email > label,
+.form-group__password > label {
     color: var(--color-text);
     font-weight: 500;
     font-size: 1.8rem;
@@ -258,7 +262,7 @@ a {
 
     padding: 20px 25px;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: var(--color-border);
     border-radius: 9px;
     transition: all 0.3s;
 }
@@ -301,9 +305,15 @@ a {
     cursor: pointer;
 }
 
+.input__note-sign-in:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
 .form-group__forgot-password {
     color: var(--color-primary);
     font-weight: 600;
+    font-size: 1.8rem;
 }
 
 .form-group__forgot-password:hover {
@@ -327,8 +337,10 @@ a {
 .btn-primary {
     padding: 14px 28px;
     background-color: var(--color-primary);
-    border-radius: 9px;
     color: #fff;
+    border-radius: 9px;
+    font-size: 1.8rem;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
@@ -352,7 +364,7 @@ a {
 
 .form-line {
     flex: 1;
-    border: 1px solid #ccc;
+    border: var(--color-border);
 }
 
 .social-group {
