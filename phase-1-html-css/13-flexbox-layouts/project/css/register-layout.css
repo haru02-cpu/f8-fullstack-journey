@@ -235,27 +235,34 @@ a {
 }
 
 .auth-form__group {
-    margin: 26px 0;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
 }
 
+.form-group__name,
 .form-group__email,
-.form-group__password {
+.form-group__password,
+.form-group__confirm-password {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
+.form-group__name > label,
 .form-group__email > label,
-.form-group__password > label {
+.form-group__password > label,
+.form-group__confirm-password > label {
     color: var(--color-text);
     font-weight: 500;
     font-size: 1.8rem;
 }
 
+.form-group__name-wrapper,
 .form-group__email-wrapper,
-.form-group__password-wrapper {
+.form-group__password-wrapper,
+.form-group__confirm-password-wrapper {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -267,27 +274,36 @@ a {
     transition: all 0.3s;
 }
 
+.form-group__input-name,
 .form-group__input-email,
-.form-group__input-password {
+.form-group__input-password,
+.form-group__input-confirm-password {
     flex: 1;
 }
 
 .form-group__email-wrapper i,
-.form-group__password-wrapper i {
+.form-group__password-wrapper i,
+.form-group__name-wrapper i,
+.form-group__confirm-password-wrapper i {
     font-size: 2rem;
     color: var(--color-primary);
 }
 
 .form-group__input-email::placeholder,
-.form-group__input-password::placeholder {
+.form-group__input-password::placeholder,
+.form-group__input-name::placeholder,
+.form-group__input-confirm-password::placeholder {
     font-size: 1.8rem;
 }
 
 .form-group__email-wrapper:focus-within,
-.form-group__password-wrapper:focus-within {
+.form-group__password-wrapper:focus-within,
+.form-group__name-wrapper:focus-within,
+.form-group__confirm-password-wrapper:focus-within {
     border-color: var(--color-primary);
 }
 
+/* Login only: Ghi nhớ đăng nhập + Quên mật khẩu
 .label__note-sign-in {
     display: flex;
     align-items: center;
@@ -319,20 +335,23 @@ a {
 .form-group__forgot-password:hover {
     text-decoration: underline;
 }
+*/
 
 .form-group__password,
-.form-group__features,
+/* .form-group__features, */
 .btn-primary,
 .form-group__choices,
 .social-group {
     margin-top: 20px;
 }
 
+/*
 .form-group__features {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+*/
 
 .btn-primary {
     padding: 14px 28px;
