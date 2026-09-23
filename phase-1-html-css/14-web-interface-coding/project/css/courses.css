@@ -116,3 +116,31 @@ body {
 .site-header__actions i {
     color: #fff;
 }
+
+.site-header__search-toggle {
+    position: relative;
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.site-header__search-form {
+    position: absolute;
+    right: 160px;
+    top: 80px;
+    height: 55px;
+    width: 280px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.site-header__search-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #ececec;
+    padding: 0 49px 0 10px;
+}
