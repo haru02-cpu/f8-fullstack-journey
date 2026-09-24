@@ -20,6 +20,7 @@ body {
 }
 
 .site-header {
+    position: relative;
     width: 100%;
     min-height: 497px;
 
@@ -27,6 +28,19 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    /* màu đen sẽ bao phủ toàn bộ ảnh nền */
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.site-header__inner {
+    position: relative;
+    z-index: 1;
 }
 
 .site-header__nav {
@@ -47,7 +61,6 @@ body {
 
 .site-header__item {
     max-width: 135px;
-    padding: 20px 25px;
     background-color: transparent;
     position: relative;
 }
@@ -56,6 +69,8 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
+    display: block;
+    padding: 20px 25px;
 }
 
 .site-header__sub-menu {
@@ -69,11 +84,20 @@ body {
     transform-origin: 100% 2%;
 
     transition: all 0.4s ease;
+
+    z-index: 2;
 }
 
 .site-header__item:hover .site-header__sub-menu {
     opacity: 1;
     transform: scale(1, 1);
+}
+
+.site-header__menu,
+.site-header__sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .site-header__sub-item {
@@ -108,6 +132,7 @@ body {
 }
 
 .site-header__actions {
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -117,30 +142,80 @@ body {
     color: #fff;
 }
 
+.site-header__search {
+    position: relative;
+}
+
 .site-header__search-toggle {
-    position: relative;
-    position: relative;
     border: none;
     outline: none;
     background: none;
     cursor: pointer;
 }
 
+.site-header__search-toggle i {
+    font-size: 1.8rem;
+}
+
 .site-header__search-form {
     position: absolute;
-    right: 160px;
-    top: 80px;
+    top: 26px;
+    right: -15px;
     height: 55px;
     width: 280px;
     background-color: #fff;
     padding: 5px;
+
+    /* opacity: 0;
+    visibility: hidden; */
 }
+
+/* .site-header__search:focus-within .site-header__search-form {
+    opacity: 1;
+    visibility: visible;
+} */
 
 .site-header__search-input {
     width: 100%;
     height: 100%;
     outline: none;
-    border: none;
     border: 1px solid #ececec;
     padding: 0 49px 0 10px;
+}
+
+.site-header__search-submit {
+    position: absolute;
+    height: 45px;
+    width: 48px;
+    right: 6px;
+    top: 5px;
+
+    border: none;
+    background-color: #b80257;
+    cursor: pointer;
+}
+
+.cart-shopping i {
+    font-size: 2rem;
+}
+
+.site-header__breadcrumb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 150px 0 190px 0;
+}
+
+.site-header__breadcrumb-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    z-index: 3;
+}
+
+.site-header__breadcrumb-path {
+    color: #ccc;
+    font-weight: 400;
+    z-index: 3;
 }
