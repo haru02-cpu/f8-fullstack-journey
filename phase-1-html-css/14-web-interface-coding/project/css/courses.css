@@ -377,10 +377,15 @@ body {
 .course-card__title a {
     text-decoration: none;
     color: #464646;
+    transition: all 0.4s ease;
 }
 
 .course-card__desc {
     color: #000;
     line-height: 22px;
     margin: 20px 0 20px 0;
+}
+
+.course-catalog__item:hover .course-card__title a {
+    color: #b80257;
 }
