@@ -46,12 +46,30 @@ input:focus-visible {
 }
 
 .site-header__menu-wrapper {
-    padding: 20px 0 0px;
-    position: sticky;
-    top: -15px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
-    background: #000;
+    background: transparent;
+}
+
+.site-header__menu-wrapper--fixed {
+    position: fixed;
+    background-color: #000;
+    animation: menu-slide-in 0.7s ease-in-out;
+}
+
+@keyframes menu-slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .site-header__nav {

@@ -1176,6 +1176,7 @@
         >
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </button>
+        <!-- scroll-top -->
         <script>
             const scrollBtn = document.querySelector(".scroll-top");
 
@@ -1192,6 +1193,20 @@
                     top: 0,
                     behavior: "smooth",
                 });
+            });
+        </script>
+
+        <!-- header-menu -->
+        <script>
+            const menuWrapper = document.querySelector(
+                ".site-header__menu-wrapper",
+            );
+
+            window.addEventListener("scroll", function () {
+                menuWrapper.classList.toggle(
+                    "site-header__menu-wrapper--fixed",
+                    window.scrollY > 100,
+                );
             });
         </script>
     </body>
