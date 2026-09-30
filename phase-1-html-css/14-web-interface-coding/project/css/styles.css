@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: "PT Sans", sans-serif;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #783df0;
+    outline-offset: 3px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.site-header {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+
+    background-image: url("../img/scholars-banner.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    /* màu đen sẽ bao phủ toàn bộ ảnh nền */
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.site-header__menu-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+}
+
+.site-header__menu-wrapper--fixed {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    animation: menu-slide-in 0.7s ease-in-out;
+}
+
+@keyframes menu-slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.site-header__nav {
+    margin-left: 68px;
+}
+
+.site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__item {
+    max-width: 135px;
+    background-color: transparent;
+    position: relative;
+}
+
+.site-header__link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    padding: 20px 25px;
+}
+
+.site-header__sub-menu {
+    width: 220px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    opacity: 0;
+    transform: scale(1, 0);
+    transform-origin: 100% 2%;
+
+    transition: all 0.4s ease;
+
+    z-index: 2;
+}
+
+.site-header__item:hover .site-header__sub-menu,
+.site-header__item:focus-within .site-header__sub-menu {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.site-header__menu,
+.site-header__sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-header__sub-item {
+    background-color: #fff;
+    transition: all 0.4s ease;
+}
+
+.site-header__sub-item:hover {
+    background-color: #b80257;
+}
+
+.site-header__sub-link {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    display: block;
+    padding: 15px 24px;
+    white-space: nowrap;
+
+    transition: all 0.4s ease;
+}
+
+.site-header__sub-item:not(:last-child) .site-header__sub-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.site-header__sub-link:hover {
+    padding-left: 29px;
+}
+
+.site-header__sub-item:hover .site-header__sub-link {
+    color: #fff;
+}
+
+.site-header__actions {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.site-header__actions i {
+    color: #fff;
+}
+
+.site-header__search {
+    position: relative;
+}
+
+.site-header__search-toggle {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.site-header__search-toggle i {
+    font-size: 1.8rem;
+}
+
+.site-header__search-form {
+    position: absolute;
+    top: 38px;
+    right: -15px;
+    height: 55px;
+    width: 280px;
+    background-color: #fff;
+    padding: 5px;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.site-header__search:focus-within .site-header__search-form {
+    opacity: 1;
+    visibility: visible;
+}
+
+.site-header__search-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #ececec;
+    padding: 0 49px 0 10px;
+}
+
+.site-header__search-submit {
+    position: absolute;
+    height: 45px;
+    width: 48px;
+    right: 6px;
+    top: 5px;
+
+    border: none;
+    background-color: #b80257;
+    cursor: pointer;
+}
+
+.cart-shopping i {
+    font-size: 2rem;
+}
+
+.site-header__breadcrumb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 222px 0 190px 0;
+}
+
+.site-header__breadcrumb-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    z-index: 3;
+}
+
+.site-header__breadcrumb-path {
+    color: #ccc;
+    font-weight: 400;
+    z-index: 3;
+}
