@@ -228,23 +228,13 @@ input:focus-visible {
     font-size: 2rem;
 }
 
-.site-header__breadcrumb {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    padding: 222px 0 190px 0;
-}
-
-.site-header__breadcrumb-title {
-    font-size: 3.2rem;
-    font-weight: 700;
+.hero {
+    padding-top: 200px;
     color: #fff;
-    z-index: 3;
 }
 
-.site-header__breadcrumb-path {
-    color: #ccc;
-    font-weight: 400;
-    z-index: 3;
+.hero__actions-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
