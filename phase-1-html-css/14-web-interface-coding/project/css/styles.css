@@ -230,11 +230,49 @@ input:focus-visible {
 
 .hero {
     padding-top: 200px;
+    position: relative;
+}
+
+.hero__sub-title {
+    font-size: 1.5rem;
     color: #fff;
 }
 
+.hero__title {
+    margin-top: 35px;
+    width: 700px;
+
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 .hero__actions-wrapper {
+    margin-top: 45px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+.hero__action-btn {
+    width: 183px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #b80257;
+
+    transition:
+        color 0.4s ease,
+        background-color 0.4s ease;
+}
+
+.hero__action-btn:hover {
+    color: #b80257;
+    background-color: #fff;
 }
