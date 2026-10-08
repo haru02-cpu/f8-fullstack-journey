@@ -1,0 +1,50 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 27/08/2017 18:48
+  	*/
+
+@font-face {
+    font-family: "Flaticon";
+
+    src: url("./Flaticon.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: inherit;
+    font-style: normal;
+    color: inherit;
+}
+
+.flaticon-checked:before {
+    content: "\f100";
+}
+.flaticon-calendar-1:before {
+    content: "\f101";
+}
+.flaticon-calendar:before {
+    content: "\f102";
+}
+.flaticon-map:before {
+    content: "\f103";
+}
+.flaticon-online-course:before {
+    content: "\f104";
+}
+.flaticon-distance-courses:before {
+    content: "\f105";
+}
+.flaticon-student:before {
+    content: "\f106";
+}
+.flaticon-cart:before {
+    content: "\f107";
+}
+.flaticon-search:before {
+    content: "\f108";
+}
