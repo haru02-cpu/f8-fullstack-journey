@@ -308,7 +308,7 @@
             </div>
         </header>
 
-        <div class="site-features">
+        <div class="site-features container">
             <div class="site-features__item">
                 <i class="flaticon-student"></i>
                 <span>20 Million Students Served</span>
@@ -323,6 +323,89 @@
             </div>
         </div>
 
+        <div class="site-course">
+            <div class="site-course__wrapper container">
+                <h2 class="site-course__title">Find the Best Courses</h2>
+                <p class="site-course__subtitle">
+                    Find your preferred course from our wide range of courses
+                    easily, with just a one search here
+                </p>
+
+                <form action="#" class="site-course__form">
+                    <div class="site-course__form-list">
+                        <div class="site-course__form-group">
+                            <label class="visually-hidden" for="CourseName"
+                                >Course Name</label
+                            >
+                            <input
+                                type="text"
+                                id="CourseName"
+                                class="site-course__choice"
+                                placeholder="Course Name"
+                            />
+                        </div>
+                        <div class="site-course__form-group">
+                            <label
+                                class="visually-hidden"
+                                for="CourseCategories"
+                                >Course Categories</label
+                            >
+                            <select
+                                name="Course Categories"
+                                id="CourseCategories"
+                                class="site-course__choice"
+                            >
+                                <option value="">Course Categories</option>
+                                <option value="cd1">Course Demo one</option>
+                                <option value="cd2">Course Demo two</option>
+                                <option value="cd3">Course Demo three</option>
+                            </select>
+                        </div>
+
+                        <div class="site-course__form-group">
+                            <label class="visually-hidden" for="CourseLevel">
+                                Course Level</label
+                            >
+                            <select
+                                name="Course Level"
+                                id="CourseLevel"
+                                class="site-course__choice"
+                            >
+                                <option value="">Course Level</option>
+                                <option value="cl1">Course Level one</option>
+                                <option value="cl2">Course Level two</option>
+                                <option value="cl3">Course Level three</option>
+                            </select>
+                        </div>
+
+                        <div class="site-course__form-group">
+                            <label
+                                class="visually-hidden"
+                                for="CourseInstructors"
+                                >Course Instructors
+                            </label>
+                            <select
+                                name="Course Instructors"
+                                id="CourseInstructors"
+                                class="site-course__choice"
+                            >
+                                <option value="">Course Instructors</option>
+                                <option value="ci1">
+                                    Course Instructors one
+                                </option>
+                                <option value="ci2">
+                                    Course Instructors two
+                                </option>
+                                <option value="ci3">
+                                    Course Instructors three
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="site-course__btn">Search Course</button>
+                </form>
+            </div>
+        </div>
         <!-- header-menu -->
         <script>
             const menuWrapper = document.querySelector(
