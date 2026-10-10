@@ -363,6 +363,7 @@ input:focus-visible {
     flex-direction: column;
 }
 
+/* hide content visually from sighted users while keeping it fully accessible to screen readers */
 .visually-hidden {
     position: absolute;
     width: 1px;
