@@ -377,4 +377,5 @@ input:focus-visible {
 }
 
 .site-course__btn {
+    border: none;
 }
