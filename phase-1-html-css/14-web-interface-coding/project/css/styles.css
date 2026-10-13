@@ -397,7 +397,7 @@ input:focus-visible {
 }
 
 .site-course__btn {
-    margin-top: 40px;
+    margin-top: 50px;
 
     width: 222px;
     height: 47px;
@@ -418,4 +418,199 @@ input:focus-visible {
 .site-course__btn:hover {
     color: #b80257;
     background-color: #fff;
+}
+
+.featured-courses {
+    margin-top: 95px;
+}
+
+.featured-courses__intro {
+    text-align: center;
+}
+
+.featured-courses__intro-title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.featured-courses__intro-subtitle {
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.featured-courses__wrapper {
+    margin-top: 95px;
+}
+
+.featured-courses__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.featured-courses__item-image {
+    height: 217px;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-courses__item:nth-child(3) .featured-courses__item-image::before,
+.featured-courses__item:nth-child(5) .featured-courses__item-image::before {
+    content: "";
+    width: 160px;
+    height: 10px;
+    padding: 64px 0 0 53px;
+    position: absolute;
+    top: -52px;
+    right: -77px;
+    transform: rotate(34deg);
+    background-color: #b80257;
+    z-index: 30;
+}
+
+.featured-courses__item:nth-child(3) .featured-courses__item-image i,
+.featured-courses__item:nth-child(5) .featured-courses__item-image i {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    transform: rotate(20deg);
+    z-index: 30;
+}
+
+.featured-courses__item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.featured-courses__item:hover .featured-courses__item-image img {
+    transform: scale(1.1);
+}
+
+.featured-courses__item-content {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 15px 20px;
+}
+
+.featured-courses__item-title a {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    text-decoration: none;
+    color: #464646;
+    line-height: 24px;
+
+    transition: color 0.3s ease;
+}
+
+.featured-courses__item:hover .featured-courses__item-title a {
+    color: #b80257;
+}
+
+.featured-courses__item-desc {
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 22px;
+}
+
+.featured-courses__item-info {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+}
+
+.featured-courses__lecturer {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+}
+
+.featured-courses__item-info .featured-courses__lecturer-name,
+.featured-courses__item-info i,
+.featured-courses__item-info .featured-courses__user-number {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.featured-courses__lecturer-name {
+    margin-right: 25px;
+}
+
+.featured-courses__user-number {
+    margin-left: 8px;
+}
+
+.featured-courses__price {
+    margin-left: auto;
+    width: 66px;
+    height: 30px;
+    font-weight: 700;
+
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: #b80257;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.featured-courses__price.free {
+    font-weight: 300;
+    background-color: #783df0;
+}
+
+.featured-courses__price:hover {
+    color: #b80257;
+    background-color: #fff;
+    border: 1px solid #b80257;
+}
+
+.featured-courses__price.free:hover {
+    color: #783df0;
+    background-color: #fff;
+    border: 1px solid #783df0;
+}
+
+.featured-courses__btn {
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 166px;
+    height: 48px;
+
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #b80257;
+    color: #fff;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.featured-courses__btn:hover {
+    color: #b80257;
+    background-color: #fff;
+    border: 1px solid #b80257;
 }
