@@ -614,3 +614,163 @@ input:focus-visible {
     background-color: #fff;
     border: 1px solid #b80257;
 }
+
+.courses-cta {
+    margin-top: 100px;
+    background-color: #783df0;
+}
+
+.courses-cta__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.courses-cta__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.courses-cta__desc {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.courses-cta__btn {
+    margin-top: 30px;
+    width: 145px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    border-radius: 30px;
+    background-color: #9c7ae0;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+}
+
+.courses-cta__btn:hover {
+    background-color: #b80257;
+}
+
+.courses-plan {
+    margin-top: 100px;
+}
+
+.courses-plan__header {
+    text-align: center;
+}
+
+.courses-plan__title {
+    margin-bottom: 8px;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.courses-plan__desc {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.courses-plan__list {
+    margin-top: 95px;
+    display: flex;
+    gap: 30px;
+}
+
+.courses-plan__item {
+    flex: 1;
+    padding: 25px 5px 20px 5px;
+    border: 3px solid #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        border 0.3s ease,
+        transform 0.7s ease;
+}
+
+.courses-plan__item:hover {
+    border: 3px solid #783df0;
+    transform: scale(1, 1.04);
+}
+
+.courses-plan__item-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 28px;
+}
+
+.courses-plan__item-content {
+    margin-top: 20px;
+}
+
+.courses-plan__price {
+    font-size: 9rem;
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.courses-plan__price sup {
+    font-size: 3rem;
+    position: relative;
+    top: -33px;
+}
+
+.courses-plan__price span {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.courses-plan__item-content ul {
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+.courses-plan__details {
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.courses-plan__cta {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 138px;
+    line-height: 46px;
+
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.55);
+    background-color: #fff;
+
+    transition:
+        color 0.7s ease,
+        background-color 0.7s ease;
+}
+
+.courses-plan__item:hover .courses-plan__cta {
+    color: #fff;
+    background-color: #783df0;
+}
