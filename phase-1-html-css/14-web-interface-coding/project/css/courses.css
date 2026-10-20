@@ -9,24 +9,43 @@ html {
 body {
     margin: 0;
     font-size: 1.6rem;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "PT Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #b80257;
+    --secondary-color: #783df0;
+    --text-heading: rgba(0, 0, 0, 0.8);
+    --text-body: rgba(0, 0, 0, 0.7);
+    --text-muted: rgba(0, 0, 0, 0.6);
+    --transition-base: all 0.4s ease;
 }
 
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-    outline: 2px solid #783df0;
+    outline: 2px solid var(--secondary-color);
     outline-offset: 3px;
 }
 
 .container {
     width: 100%;
     max-width: 1170px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 15px;
 }
 
-.site-header {
+.page-banner {
     position: relative;
     width: 100%;
     min-height: 497px;
@@ -37,25 +56,26 @@ input:focus-visible {
     background-repeat: no-repeat;
 }
 
-.site-header::before {
+.page-banner::before {
     content: "";
     position: absolute;
     /* màu đen sẽ bao phủ toàn bộ ảnh nền */
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--text-muted);
 }
 
-.site-header__menu-wrapper {
+.site-header {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     z-index: 1000;
     background: transparent;
 }
 
-.site-header__menu-wrapper--fixed {
+.site-header--fixed {
     position: fixed;
+    top: 0;
     background-color: #000;
     animation: menu-slide-in 0.7s ease-in-out;
 }
@@ -93,10 +113,19 @@ input:focus-visible {
     position: relative;
 }
 
+.site-header__link,
+.page-banner__breadcrumb-title,
+.course-catalog__filter-title,
+.course-card__title,
+.course-card__footer-price span,
+.footer-column__title {
+    font-weight: 700;
+}
+
 .site-header__link {
     text-decoration: none;
     color: #fff;
-    font-weight: 700;
+
     display: block;
     padding: 20px 25px;
 }
@@ -111,7 +140,7 @@ input:focus-visible {
     transform: scale(1, 0);
     transform-origin: 100% 2%;
 
-    transition: all 0.4s ease;
+    transition: var(--transition-base);
 
     z-index: 2;
 }
@@ -131,21 +160,21 @@ input:focus-visible {
 
 .site-header__sub-item {
     background-color: #fff;
-    transition: all 0.4s ease;
+    transition: var(--transition-base);
 }
 
 .site-header__sub-item:hover {
-    background-color: #b80257;
+    background-color: var(--primary-color);
 }
 
 .site-header__sub-link {
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--text-muted);
     text-decoration: none;
     display: block;
     padding: 15px 24px;
     white-space: nowrap;
 
-    transition: all 0.4s ease;
+    transition: var(--transition-base);
 }
 
 .site-header__sub-item:not(:last-child) .site-header__sub-link {
@@ -175,8 +204,16 @@ input:focus-visible {
     position: relative;
 }
 
-.site-header__search-toggle {
+.site-header__search-toggle,
+.site-header__search-submit,
+.course-catalog__search-submit,
+.footer-subscribe__email-input,
+.footer-subscribe__btn,
+.scroll-top {
     border: none;
+}
+
+.site-header__search-toggle {
     outline: none;
     background: none;
     cursor: pointer;
@@ -219,8 +256,7 @@ input:focus-visible {
     right: 6px;
     top: 5px;
 
-    border: none;
-    background-color: #b80257;
+    background-color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -228,7 +264,7 @@ input:focus-visible {
     font-size: 2rem;
 }
 
-.site-header__breadcrumb {
+.page-banner__breadcrumb {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -236,17 +272,37 @@ input:focus-visible {
     padding: 222px 0 190px 0;
 }
 
-.site-header__breadcrumb-title {
+.page-banner__breadcrumb-title {
     font-size: 3.2rem;
-    font-weight: 700;
     color: #fff;
     z-index: 3;
 }
 
-.site-header__breadcrumb-path {
+.page-banner__breadcrumb-path {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-banner__breadcrumb-path li,
+.page-banner__breadcrumb-path li a {
     color: #ccc;
     font-weight: 400;
     z-index: 3;
+}
+
+.page-banner__breadcrumb-path li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-banner__breadcrumb-path li a:hover {
+    color: var(--secondary-color);
+}
+
+.page-banner__breadcrumb-path li + li::before {
+    content: "/";
+    margin: 0 10px;
 }
 
 .course-catalog {
@@ -289,7 +345,6 @@ input:focus-visible {
     width: 40px;
     text-align: left;
 
-    border: none;
     background: transparent;
 
     cursor: pointer;
@@ -305,7 +360,6 @@ input:focus-visible {
 
 .course-catalog__filter-title {
     color: #141414;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -321,14 +375,15 @@ input:focus-visible {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--text-body);
 
-    transition: all 0.4s ease;
+    transition: var(--transition-base);
 }
 
-.course-catalog__filter-link:hover {
+.course-catalog__filter-link:hover,
+.course-catalog__filter-link:focus-within {
     padding-left: 35px;
-    color: #783df0;
+    color: var(--secondary-color);
 }
 
 .course-catalog__content {
@@ -349,18 +404,19 @@ input:focus-visible {
 
     /* line-height: 60px; */
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text-heading);
 
     transition: all 0.3s ease;
 }
 
-.course-catalog__tab-link:hover {
-    background-color: #783df0;
+.course-catalog__tab-link:hover,
+.course-catalog__tab-link:focus-within {
+    background-color: var(--secondary-color);
     color: #fff;
 }
 
 .course-catalog__tab-link.active {
-    background-color: #783df0;
+    background-color: var(--secondary-color);
     color: #fff;
 }
 
@@ -391,8 +447,25 @@ input:focus-visible {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 16 / 9;
+    /* Trường hợp giống bố cục gốc */
+    /* aspect-ratio: 5 / 4; */
 
     transition: all 0.5s ease-in-out;
+}
+
+.course-card:hover .course-card__image img {
+    opacity: 0.8;
+    transform: scale3d(1.1, 1.1, 1);
+    /* 
+    x = 1.1: chiều ngang tăng lên 110%.
+    y = 1.1: chiều dọc tăng lên 110%.
+    z = 1: chiều sâu giữ nguyên. 
+    */
+}
+
+.course-card:focus-within .course-card__image img {
+    opacity: 0.8;
+    transform: scale3d(1.1, 1.1, 1);
 }
 
 .course-catalog__item:nth-child(2) .course-card__image::before,
@@ -406,7 +479,7 @@ input:focus-visible {
     top: -52px;
     right: -77px;
     transform: rotate(34deg);
-    background-color: #b80257;
+    background-color: var(--primary-color);
 
     z-index: 30;
 }
@@ -418,19 +491,9 @@ input:focus-visible {
     top: 7px;
     right: 10px;
     color: #fff;
-    font-size: 20px;
+    font-size: 2rem;
     transform: rotate(20deg);
     z-index: 30;
-}
-
-.course-card:hover .course-card__image img {
-    opacity: 0.8;
-    transform: scale3d(1.1, 1.1, 1);
-    /* 
-    x = 1.1: chiều ngang tăng lên 110%.
-    y = 1.1: chiều dọc tăng lên 110%.
-    z = 1: chiều sâu giữ nguyên. 
-    */
 }
 
 .course-card__inner {
@@ -445,25 +508,33 @@ input:focus-visible {
 }
 
 .course-card__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 1.3;
 }
 
 .course-card__title a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
     text-decoration: none;
     color: #464646;
-    transition: all 0.4s ease;
+    transition: var(--transition-base);
+}
+
+.course-card:hover .course-card__title a,
+.course-card:focus-within .course-card__title a {
+    color: var(--primary-color);
 }
 
 .course-card__desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
     color: #000;
     line-height: 22px;
     margin: 20px 0 20px 0;
-}
-
-.course-card:hover .course-card__title a {
-    color: #b80257;
 }
 
 .course-card__footer {
@@ -472,7 +543,7 @@ input:focus-visible {
     justify-content: space-between;
     gap: 10px;
     align-items: center;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--text-muted);
 }
 
 .course-card__footer-avatar {
@@ -518,9 +589,8 @@ input:focus-visible {
     border-radius: 30px;
 
     text-align: center;
-    background: #b80257;
+    background: var(--primary-color);
     color: #fff;
-    font-weight: 700;
     white-space: nowrap;
 }
 
@@ -535,7 +605,7 @@ input:focus-visible {
 .course-catalog__item:nth-child(1) .course-card__footer-price span,
 .course-catalog__item:nth-child(4) .course-card__footer-price span,
 .course-catalog__item:nth-child(7) .course-card__footer-price span {
-    background: #783df0;
+    background: var(--secondary-color);
     font-weight: 400;
 }
 
@@ -560,23 +630,23 @@ input:focus-visible {
     font-size: 1.4rem;
     color: rgba(0, 0, 0, 0.3);
 
-    transition: all 0.4s ease;
+    transition: var(--transition-base);
 }
 
 .course-catalog__pagination-link:hover {
-    color: #783df0;
-    border: 1px solid #783df0;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .course-catalog__pagination-item.active .course-catalog__pagination-link {
-    color: #783df0;
-    border: 1px solid #783df0;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .course-catalog__pagination-item.active:nth-child(4)
     .course-catalog__pagination-link {
     color: #fff;
-    background-color: #783df0;
+    background-color: var(--secondary-color);
 }
 
 .course-catalog__pagination-item:nth-child(4) {
@@ -631,9 +701,7 @@ input:focus-visible {
 
 .footer-column__title {
     font-size: 2rem;
-    font-weight: 700;
     color: #fff;
-
     margin-bottom: 25px;
 }
 
@@ -648,11 +716,11 @@ input:focus-visible {
     display: block;
     width: 149px;
 
-    transition: all 0.4s ease;
+    transition: var(--transition-base);
 }
 
 .footer-column__link:hover {
-    color: #b80257;
+    color: var(--primary-color);
 }
 
 .footer-subscribe__email {
@@ -660,6 +728,12 @@ input:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.footer-subscribe__email-input,
+.footer-subscribe__btn,
+.hvr-rectangle-out::before {
+    border-radius: 20px;
 }
 
 .footer-subscribe__email-input {
@@ -670,20 +744,15 @@ input:focus-visible {
     background-color: #272727;
     color: #fff;
 
-    border: none;
     outline: none;
-    border-radius: 20px;
 }
 
 .footer-subscribe__btn {
     width: 95px;
     line-height: 40px;
 
-    border: none;
-    border-radius: 20px;
-
     color: #fff;
-    background-color: #b80257;
+    background-color: var(--primary-color);
 
     cursor: pointer;
     overflow: hidden;
@@ -699,7 +768,7 @@ input:focus-visible {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 
     position: relative;
-    background: #b80257;
+    background: var(--primary-color);
     color: #fff;
 
     /* Chỉ thuộc tính color được animation */
@@ -721,8 +790,6 @@ input:focus-visible {
 
     background: #fff;
 
-    border-radius: 20px;
-
     transform: scale(0);
 
     /* Chỉ animate transform từ scale(0) thành scale(1)*/
@@ -734,7 +801,7 @@ input:focus-visible {
 .hvr-rectangle-out:hover::before,
 .hvr-rectangle-out:hover {
     transform: scale(1);
-    color: #b80257;
+    color: var(--primary-color);
 }
 
 .scroll-top {
@@ -748,10 +815,9 @@ input:focus-visible {
 
     text-align: center;
     color: #fff;
-    background-color: #b80257;
+    background-color: var(--primary-color);
     font-size: 1.5rem;
 
-    border: none;
     cursor: pointer;
 
     opacity: 0;
