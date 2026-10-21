@@ -335,6 +335,20 @@ input:focus-visible {
     background-color: #fff;
 
     padding: 0 40px 0 20px;
+
+    transition: border 0.3s ease;
+}
+
+.course-catalog__search-input + button i {
+    transition: color 0.3s ease;
+}
+
+.course-catalog__search-input:not(:placeholder-shown) + button i {
+    color: var(--primary-color);
+}
+
+.course-catalog__search-input:not(:placeholder-shown) {
+    border: 1px solid var(--primary-color);
 }
 
 .course-catalog__search-submit {
