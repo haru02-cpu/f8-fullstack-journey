@@ -551,6 +551,10 @@ input:focus-visible {
     margin: 20px 0 20px 0;
 }
 
+.course-catalog__item:nth-child(5) .course-card__desc {
+    margin-top: 40px;
+}
+
 .course-card__footer {
     margin-top: auto;
     display: flex;
@@ -598,7 +602,7 @@ input:focus-visible {
 
 .course-card__footer-price span {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     line-height: 32px;
     border-radius: 30px;
 
