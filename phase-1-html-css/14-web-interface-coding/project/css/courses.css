@@ -786,6 +786,17 @@ input:focus-visible {
     overflow: hidden;
 }
 
+/* Messenger Chat */
+.messenger-chat img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+/* Hover Button Attribute */
 .hvr-rectangle-out {
     display: inline-block;
     /* giúp chúng căn theo chiều dọc ổn định hơn */
@@ -832,6 +843,7 @@ input:focus-visible {
     color: var(--primary-color);
 }
 
+/* Scroll Up Behavior */
 .scroll-top {
     width: 40px;
     height: 40px;
