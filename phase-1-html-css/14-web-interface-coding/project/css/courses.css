@@ -170,20 +170,20 @@ input:focus-visible {
 
 .site-header__sub-link {
     display: block;
-    position: relative;
-    left: 0;
     text-decoration: none;
     padding: 15px 24px;
     color: var(--text-muted);
     white-space: nowrap;
 
+    translate: 0;
+
     transition:
         color ease 0.4s,
-        left linear 0.4s;
+        translate linear 0.4s;
 }
 
 .site-header__sub-link:hover {
-    left: 7px;
+    translate: 7px;
 }
 
 .site-header__sub-item:not(:last-child) .site-header__sub-link {
