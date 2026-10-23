@@ -589,31 +589,9 @@ input:focus-visible {
     gap: 5px;
 }
 
-.course-card__footer-price {
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.course-card__footer-price::after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 10%;
-    width: 80%;
-    height: 7px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    filter: blur(3px);
-    z-index: -1;
-
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.course-card__footer-price a {
-    display: inline-block;
+.hvr-float-shadow {
     position: relative;
-
+    display: inline-block;
     min-width: 66px;
     line-height: 32px;
     border-radius: 30px;
@@ -622,18 +600,35 @@ input:focus-visible {
     text-decoration: none;
     background: var(--primary-color);
     color: var(--white-color);
-    white-space: nowrap;
+
+    transition: transform 0.3s ease;
 }
 
-.course-card__footer-price .hvr-float-shadow {
-}
-
-.course-card__footer-price:hover {
+.course-card__footer-price a:hover {
     transform: translateY(-5px);
 }
 
-.course-card__footer-price:hover::after {
+.hvr-float-shadow::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0.35) 0%,
+        rgba(0, 0, 0, 0) 80%
+    );
+    opacity: 0;
+
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+}
+
+.hvr-float-shadow:hover::before {
     opacity: 1;
+    transform: translateY(5px);
 }
 
 .course-catalog__item:nth-child(1) .course-card__footer-price a,
@@ -785,11 +780,45 @@ input:focus-visible {
     width: 95px;
     line-height: 40px;
 
-    color: var(--white-color);
-    background-color: var(--primary-color);
-
     cursor: pointer;
     overflow: hidden;
+}
+
+/* Hover Button Attribute */
+.hvr-rectangle-out {
+    position: relative;
+
+    z-index: 0;
+
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    transition: color 0.3s ease;
+}
+
+.hvr-rectangle-out::before {
+    content: "";
+    position: absolute;
+
+    /* Để nền trắng nằm sau chữ */
+    z-index: -1;
+    /* Phủ hết 4 hướng = 0 */
+    inset: 0;
+    background: var(--white-color);
+
+    /* Thu thành chấm ở giữa */
+    transform: scale(0);
+
+    transition: transform 0.3s ease-out;
+}
+
+.hvr-rectangle-out:hover::before {
+    /* Nở từ giữa ra */
+    transform: scale(1);
+}
+
+.hvr-rectangle-out:hover {
+    color: var(--primary-color);
 }
 
 /* Messenger Chat */
@@ -800,53 +829,6 @@ input:focus-visible {
     position: fixed;
     left: 10px;
     bottom: 10px;
-}
-
-/* Hover Button Attribute */
-.hvr-rectangle-out {
-    display: inline-block;
-    /* giúp chúng căn theo chiều dọc ổn định hơn */
-    vertical-align: middle;
-    /* được kiểm soát trong button thay vì dễ rơi ra phía sau các thành phần khác của trang */
-    transform: translateZ(0);
-    /* một kỹ thuật cũ trong các thư viện animation  */
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-
-    position: relative;
-    background: var(--primary-color);
-    color: var(--white-color);
-
-    /* Chỉ thuộc tính color được animation */
-    transition-property: color;
-    transition-duration: 0.3s;
-}
-
-.hvr-rectangle-out::before {
-    content: "";
-    position: absolute;
-
-    /* để nền trắng nằm sau chữ */
-    z-index: -1;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background: var(--white-color);
-
-    transform: scale(0);
-
-    /* Chỉ animate transform từ scale(0) thành scale(1)*/
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.hvr-rectangle-out:hover::before,
-.hvr-rectangle-out:hover {
-    transform: scale(1);
-    color: var(--primary-color);
 }
 
 /* Scroll Up Behavior */
