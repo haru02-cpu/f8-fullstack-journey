@@ -190,7 +190,9 @@ input:focus-visible {
     transform: scale(1, 0);
     transform-origin: 100% 2%;
 
-    transition: all 0.4s ease;
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
 
     z-index: 2;
 }
