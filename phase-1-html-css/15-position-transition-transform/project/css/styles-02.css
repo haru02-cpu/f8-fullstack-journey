@@ -60,6 +60,14 @@ h6 {
     color: var(--primary-color);
 }
 
+.hvr-rectangle-out:focus-visible::before {
+    transform: scale(1);
+}
+
+.hvr-rectangle-out:focus-visible {
+    color: var(--primary-color);
+}
+
 /* Hover Float Shadow */
 .hvr-float-shadow {
     position: relative;
@@ -67,6 +75,10 @@ h6 {
 }
 
 .hvr-float-shadow:hover {
+    transform: translateY(-5px);
+}
+
+.hvr-float-shadow:focus-visible {
     transform: translateY(-5px);
 }
 
@@ -88,6 +100,11 @@ h6 {
 }
 
 .hvr-float-shadow:hover::before {
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+.hvr-float-shadow:focus-visible::before {
     opacity: 1;
     transform: translateY(5px);
 }
@@ -1233,6 +1250,7 @@ footer {
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
+
     opacity: 0;
     visibility: hidden;
 }
@@ -1243,5 +1261,7 @@ footer {
 }
 
 .tran3s {
-    transition: all 0.3s ease;
+    transition:
+        opacity 0.4s ease-in-out,
+        visibility 0.4s ease-in-out;
 }
