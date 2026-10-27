@@ -17,6 +17,12 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        />
     </head>
     <body>
         <div class="outline-course__wrapper">
@@ -33,8 +39,12 @@
                 </div>
 
                 <div class="sidebar__progress">
-                    <h2 class="progress__title">Tiến độ học tập</h2>
-                    <span class="progress__total-lessons">12 / 28 bài học</span>
+                    <div class="progress__heading">
+                        <h2 class="progress__title">Tiến độ học tập</h2>
+                        <span class="progress__total-lessons"
+                            >12 / 28 bài học</span
+                        >
+                    </div>
                     <div class="progress-bar">
                         <progress value="12" max="28"></progress>
                         <span>43%</span>
@@ -44,29 +54,224 @@
                 <div class="outline-course__sidebar-list">
                     <nav>
                         <ul class="list-menu">
-                            <li class="list-menu__item">
-                                <a href="#!">Nội dung khóa học</a>
+                            <li class="list-menu__item active">
+                                <a href="#!">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    Nội dung khóa học</a
+                                >
                             </li>
                             <li class="list-menu__item">
-                                <a href="#!">Tổng quan khóa học</a>
+                                <a href="#!">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    Tổng quan khóa học</a
+                                >
                             </li>
                             <li class="list-menu__item">
-                                <a href="#!">Tài liệu & tài nguyên</a>
+                                <a href="#!">
+                                    <i class="fa-regular fa-folder"></i>
+                                    Tài liệu & tài nguyên</a
+                                >
                             </li>
                             <li class="list-menu__item">
-                                <a href="#!">Dự án thực hành</a>
+                                <a href="#!">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    Dự án thực hành</a
+                                >
                             </li>
                             <li class="list-menu__item">
-                                <a href="#!">Hỏi đáp</a>
+                                <a href="#!">
+                                    <i class="fa-regular fa-message"></i>
+                                    Hỏi đáp</a
+                                >
                             </li>
                             <li class="list-menu__item">
-                                <a href="#!">Ghi chú của tôi</a>
+                                <a href="#!">
+                                    <i class="fa-regular fa-note-sticky"></i>
+                                    Ghi chú của tôi</a
+                                >
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div class="outline-course__main-content"></div>
+            <div class="outline-course">
+                <div class="outline-course__pagination">
+                    <a href="#!" class="pagination__item"
+                        >Lộ trình Front-end Developer
+                    </a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#!" class="pagination__item active"
+                        >Nội dung khóa học</a
+                    >
+                </div>
+                <div class="outline-course__header">
+                    <div class="outline-course__header-inner">
+                        <h1 class="header__title">Nội dung khóa học</h1>
+                        <p class="header__desc">
+                            Danh sách chương và bài học trong lộ trình. Học theo
+                            thứ tự để nắm vững kiến thức từ cơ bản đến nâng cao.
+                        </p>
+                    </div>
+                    <a href="" class="header__course-continue">
+                        <i class="fa-regular fa-file-lines"></i>
+                        Tiếp tục học
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="outline-course__content">
+                    <ul class="content__list">
+                        <li class="list__item">
+                            <div class="item__header">
+                                <div class="header__chapter-label">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <span class="chapter-label__number"
+                                        >03</span
+                                    >
+                                    <span class="chapter-label__title"
+                                        >Chương 03 • CSS nền tảng</span
+                                    >
+                                </div>
+                                <div class="header__chapter-process">
+                                    <span class="chapter-process__status-badge">
+                                        <i
+                                            class="fa-regular fa-square-caret-right"
+                                        ></i>
+                                        Đang học
+                                    </span>
+                                    <span class="chapter-process__stats"
+                                        >3 / 8 bài học
+                                    </span>
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </div>
+                            </div>
+                            <ul class="item__lesson-list">
+                                <li class="lesson-list__lesson-item">
+                                    <a href="#!" class="lesson-item__info">
+                                        <i class="fa-regular fa-circle-dot"></i>
+                                        <span class="info__lesson-number"
+                                            >3.1</span
+                                        >
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <span class="info__lesson-name"
+                                            >Bộ chọn và độ ưu tiên</span
+                                        >
+                                    </a>
+                                    <span class="lesson-item__duration"
+                                        >12 phút</span
+                                    >
+                                </li>
+                                <li class="lesson-list__lesson-item">
+                                    <a href="#!" class="lesson-item__info">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <span class="info__lesson-number"
+                                            >3.2</span
+                                        >
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <span class="info__lesson-name"
+                                            >Box model</span
+                                        >
+                                    </a>
+                                    <span class="lesson-item__duration"
+                                        >18 phút</span
+                                    >
+                                </li>
+                                <li class="lesson-list__lesson-item">
+                                    <a href="#!" class="lesson-item__info">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <span class="info__lesson-number"
+                                            >3.3</span
+                                        >
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <span class="info__lesson-name"
+                                            >Flexbox</span
+                                        >
+                                    </a>
+                                    <span class="lesson-item__duration"
+                                        >22 phút</span
+                                    >
+                                </li>
+                                <li class="lesson-list__lesson-item">
+                                    <a href="#!" class="lesson-item__info">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <span class="info__lesson-number"
+                                            >3.4</span
+                                        >
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <span class="info__lesson-name"
+                                            >Grid layout</span
+                                        >
+                                    </a>
+                                    <span class="lesson-item__duration"
+                                        >20 phút</span
+                                    >
+                                </li>
+                                <li class="lesson-list__lesson-item">
+                                    <a href="#!" class="lesson-item__info">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <span class="info__lesson-number"
+                                            >3.5</span
+                                        >
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <span class="info__lesson-name"
+                                            >Responsive design với CSS</span
+                                        >
+                                    </a>
+                                    <span class="lesson-item__duration"
+                                        >25 phút</span
+                                    >
+                                </li>
+                                <li class="lesson-list__lesson-item">
+                                    <a href="#!" class="lesson-item__info">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <span class="info__lesson-number"
+                                            >3.6</span
+                                        >
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <span class="info__lesson-name"
+                                            >Pseudo-class và
+                                            pseudo-element</span
+                                        >
+                                    </a>
+                                    <span class="lesson-item__duration"
+                                        >15 phút</span
+                                    >
+                                </li>
+                                <li class="lesson-list__lesson-item">
+                                    <a href="#!" class="lesson-item__info">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <span class="info__lesson-number"
+                                            >3.7</span
+                                        >
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        <span class="info__lesson-name"
+                                            >Biến CSS</span
+                                        >
+                                    </a>
+                                    <span class="lesson-item__duration"
+                                        >18 phút</span
+                                    >
+                                </li>
+                                <li class="lesson-list__lesson-item">
+                                    <a href="#!" class="lesson-item__info">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <span class="info__lesson-number"
+                                            >3.8</span
+                                        >
+                                        <i class="fa-regular fa-file-code"></i>
+                                        <span class="info__lesson-name"
+                                            >Bài tập thực hành CSS</span
+                                        >
+                                    </a>
+                                    <span class="lesson-item__duration"
+                                        >30 phút</span
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list__item"></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </body>
 </html>
