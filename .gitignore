@@ -14,7 +14,12 @@ build/
 # Editor
 .vscode/*
 !.vscode/extensions.json
+**/.vscode/*
+!**/.vscode/extensions.json
 .DS_Store
+
+# Reference files (not part of the project)
+phase-1-html-css/15-position-transition-transform/course-outline-mockup.png
 
 # Logs
 *.log
