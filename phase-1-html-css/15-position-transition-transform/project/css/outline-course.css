@@ -32,6 +32,11 @@ a {
 
 .outline-course__sidebar {
     width: 400px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .sidebar__banner {
@@ -125,7 +130,6 @@ a {
 
 /* Main content */
 .outline-course {
-    background-color: var(--secondary-color);
     flex: 1;
     padding: 10px 12px;
 }
@@ -160,4 +164,237 @@ a {
 .header__title {
     font-size: 3.5rem;
     font-weight: 700;
+    color: #0a0f3c;
+}
+
+.header__desc {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.header__course-continue {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    margin-left: auto;
+    padding: 10px 20px;
+    border: 1px solid #0a0f3c;
+    border-radius: 10px;
+
+    color: #0a0f3c;
+    font-size: 1.9rem;
+    font-weight: 500;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.header__course-continue:hover {
+    color: var(--white-color);
+    background-color: #0a0f3c;
+}
+
+.outline-course__content {
+    margin-top: 25px;
+}
+
+.list__item {
+    margin-top: 20px;
+    border: 2px solid #dfdede;
+    border-radius: 10px;
+}
+
+.item__header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    background-color: #f0f4f4;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__chapter-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__chapter-label i,
+.header__chapter-process i {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.chapter-label__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+
+    background-color: #1d61e0;
+    color: var(--white-color);
+
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    border-radius: 50%;
+}
+
+.chapter-label__title {
+    color: #0a0f3c;
+    font-size: 2.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.header__chapter-process {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.chapter-process__status-badge {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+    padding: 9px 10px;
+
+    border: 1px solid #dce8f8;
+    background-color: #dce8f8;
+    color: #1d61e0;
+
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.chapter-process__stats {
+    color: rgba(0, 0, 0, 0.7);
+    white-space: nowrap;
+}
+
+.item__lesson-list {
+    padding: 20px 20px 20px 70px;
+    position: relative;
+}
+
+.item__lesson-list::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 91%;
+    top: 0;
+    left: 50px;
+    background-color: #dfdede;
+}
+
+.lesson-list__lesson-item {
+    border-radius: 10px;
+    translate: 0;
+    position: relative;
+}
+
+.lesson-list__lesson-item::before {
+    content: "•";
+    color: #dfdede;
+    position: absolute;
+    font-size: 3.5rem;
+    top: 4px;
+    left: -27px;
+}
+
+.lesson-item__info {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+
+    transition:
+        color 0.4s ease,
+        background-color 0.4s ease;
+}
+
+.lesson-item__info i,
+.info__lesson-number,
+.info__lesson-name,
+.lesson-list__lesson-item,
+.lesson-list__lesson-item::before {
+    transition:
+        color 0.4s ease,
+        font-weight 0.4s ease,
+        translate 0.4s ease,
+        background-color 0.4s ease;
+}
+
+.lesson-list__lesson-item:hover .lesson-item__info i,
+.lesson-list__lesson-item:hover .info__lesson-number {
+    color: #1d61e0;
+}
+
+.lesson-list__lesson-item:hover .info__lesson-name {
+    font-weight: 600;
+}
+
+.lesson-list__lesson-item:hover {
+    translate: 7px;
+    background-color: #ecf4ff;
+}
+
+.lesson-list__lesson-item:hover::before {
+    translate: -7px;
+}
+
+.lesson-item__info i {
+    font-size: 2rem;
+}
+
+.info__lesson-number,
+.info__lesson-name {
+    font-size: 1.8rem;
+}
+
+.lesson-item__info i,
+.info__lesson-name {
+    margin-left: 10px;
+}
+
+.info__lesson-number {
+    margin-left: 20px;
+}
+
+.lesson-item__duration {
+    margin-left: auto;
+    color: rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+}
+
+.lesson-list__lesson-item.active {
+    background-color: var(--secondary-color);
+}
+
+.lesson-list__lesson-item.active .lesson-item__info i,
+.lesson-list__lesson-item.active .info__lesson-number {
+    color: #1d61e0;
+}
+
+.lesson-list__lesson-item.active .lesson-item__info {
+    font-weight: 600;
+}
+
+.lesson-list__lesson-item.active .lesson-item__duration::before {
+    content: "Đang học • ";
+    color: #1d61e0;
+    white-space: nowrap;
 }
