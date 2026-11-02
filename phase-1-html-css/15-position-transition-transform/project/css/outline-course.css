@@ -96,6 +96,10 @@ a {
     height: 25px;
 }
 
+.progress-bar span {
+    font-size: 1.7rem;
+}
+
 .outline-course__sidebar-list {
     margin-top: 30px;
 }
