@@ -31,6 +31,9 @@ phase-1-html-css/
   12-fonts-and-css-variables/
   13-flexbox-layouts/
   14-web-interface-coding/
+  15-position-transition-transform/
+  16-other-css-properties/
+  17-animation-bem-table-iframe-video-audio/  
 ```
 
 - Each chapter folder holds its exercises and any small project for that lesson.
