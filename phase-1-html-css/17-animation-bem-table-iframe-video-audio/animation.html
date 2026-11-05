@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Animation</title>
+    </head>
+
+    <style>
+        body {
+            padding: 100px;
+        }
+
+        .loading {
+            display: flex;
+            gap: 10px;
+        }
+
+        .loading span {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--color, orange);
+        }
+
+        body:hover .loading span {
+            animation: loading ease 1s infinite var(--delay, 0s);
+        }
+
+        @keyframes loading {
+            0%,
+            50%,
+            100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-20px);
+            }
+            40%,
+            60% {
+                transform: translateY(3px);
+            }
+        }
+
+        .loading span:nth-child(2) {
+            --color: green;
+            --delay: 0.1s;
+        }
+
+        .loading span:nth-child(3) {
+            --color: violet;
+            --delay: 0.2s;
+        }
+
+        .loading span:nth-child(4) {
+            --color: blue;
+            --delay: 0.3s;
+        }
+    </style>
+
+    <body>
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </body>
+</html>
