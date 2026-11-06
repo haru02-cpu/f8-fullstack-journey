@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Other Tags</title>
+
+        <style>
+            /* BEM - Block Element Modifier 
+                -> block__element--modifier <-
+                - block: btn
+                - element: btn__inner
+                - modifier: btn--primary, btn__inner--italic
+            */
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                height: 100vh;
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    Oxygen,
+                    Ubuntu,
+                    Cantarell,
+                    "Open Sans",
+                    "Helvetica Neue",
+                    sans-serif;
+            }
+
+            .container {
+                width: 800px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            .table {
+                width: 100%;
+
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+
+            .table th,
+            .table td {
+                padding: 4px;
+                border: 3px solid #ccc;
+            }
+
+            .table th {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <table class="table">
+                <!-- Table head -->
+                <thead>
+                    <!-- Table row -->
+                    <tr>
+                        <!-- Table heading -->
+                        <th width="180" colspan="3">Thứ 2</th>
+                        <th>Thứ 5</th>
+                        <th>Thứ 6</th>
+                    </tr>
+                </thead>
+
+                <!-- Table body -->
+                <tbody>
+                    <!-- Table row -->
+                    <tr>
+                        <!-- Table data -->
+                        <td>Văn</td>
+                        <td>Anh</td>
+                        <td>Toán</td>
+                        <td>Anh</td>
+                        <td rowspan="3">Sinh</td>
+                    </tr>
+                    <!-- Table row -->
+                    <tr>
+                        <!-- Table data -->
+                        <td>Công nghệ</td>
+                        <td>Tin</td>
+                        <td>GDCD</td>
+                        <td>Địa</td>
+                    </tr>
+                    <tr>
+                        <!-- Table data -->
+                        <td>Tin</td>
+                        <td>Thể dục</td>
+                        <td>Lý</td>
+                        <td>Hóa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
