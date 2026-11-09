@@ -36,6 +36,7 @@
                     "Open Sans",
                     "Helvetica Neue",
                     sans-serif;
+                background: #000;
             }
 
             .container {
@@ -54,23 +55,80 @@
             .table th,
             .table td {
                 padding: 4px;
-                border: 3px solid #ccc;
+                /* border: 3px solid #ccc; */
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .table th:first-child,
+            .table td:first-child {
+                border-right: 1px solid #ccc;
             }
 
             .table th {
                 text-align: left;
             }
+
+            iframe {
+                width: 100vw;
+                height: 100vh;
+                border: none;
+                flex-shrink: 0;
+            }
         </style>
     </head>
     <body>
-        <div class="container">
+        <video
+            width="100%"
+            poster="https://picsum.photos/1920/1080"
+            controls
+            autoplay
+            muted
+            src="https://files.f8.edu.vn/f8-prod/manual_uploads/htmlcss-pro/f8-project-8.mp4"
+        ></video>
+
+        <!-- <iframe
+            srcdoc='&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;'
+            frameborder="0"
+        ></iframe> -->
+
+        <!-- <iframe
+            hidden
+            src="./animation.html"
+            title="YouTube video player"
+            allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe> -->
+
+        <div hidden class="container">
             <table class="table">
                 <!-- Table head -->
                 <thead>
                     <!-- Table row -->
                     <tr>
                         <!-- Table heading -->
-                        <th width="180" colspan="3">Thứ 2</th>
+                        <th>Thứ 2</th>
+                        <th>Thứ 3</th>
+                        <th>Thứ 4</th>
                         <th>Thứ 5</th>
                         <th>Thứ 6</th>
                     </tr>
@@ -85,15 +143,18 @@
                         <td>Anh</td>
                         <td>Toán</td>
                         <td>Anh</td>
-                        <td rowspan="3">Sinh</td>
+                        <td>Sinh</td>
+                        <!-- <td rowspan="3">Sinh</td> -->
                     </tr>
                     <!-- Table row -->
                     <tr>
                         <!-- Table data -->
                         <td>Công nghệ</td>
                         <td>Tin</td>
+                        <!-- <td rowspan="2">Thể dục</td> -->
                         <td>GDCD</td>
                         <td>Địa</td>
+                        <td>Hóa</td>
                     </tr>
                     <tr>
                         <!-- Table data -->
@@ -101,6 +162,7 @@
                         <td>Thể dục</td>
                         <td>Lý</td>
                         <td>Hóa</td>
+                        <td>Sinh</td>
                     </tr>
                 </tbody>
             </table>
