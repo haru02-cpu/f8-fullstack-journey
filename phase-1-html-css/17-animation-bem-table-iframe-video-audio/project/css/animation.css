@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.genetics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.genetics-line {
+    display: flex;
+    gap: 10px;
+}
+
+.genetics-line span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+}
