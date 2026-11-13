@@ -4,7 +4,6 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    /* background-color: #0f172a; */
 }
 
 .dna-loader {
@@ -28,7 +27,7 @@ body {
 .dot.top {
     --travel: 110px;
     --mid-travel: 55px;
-    /* background-color: aqua; */
+
     background-color: #000;
     top: 0;
     animation: move 3.5s linear infinite;
@@ -38,7 +37,7 @@ body {
 .dot.bottom {
     --travel: -110px;
     --mid-travel: -55px;
-    /* background-color: #f43f5e; */
+
     background-color: #000;
     bottom: 0;
     animation: move 3.5s linear infinite reverse;
@@ -46,27 +45,34 @@ body {
 }
 
 @keyframes move {
+    /* Each keyframe sets position, size, and opacity; its timing function
+       controls the transition from this keyframe to the next. */
     0% {
+        /* Start in place, slightly smaller and translucent. */
         transform: translateY(0) scale(0.8);
         opacity: 0.6;
         animation-timing-function: ease-in;
     }
     25% {
+        /* Move halfway, grow larger, and become fully opaque. */
         transform: translateY(var(--mid-travel)) scale(1.3);
         opacity: 1;
         animation-timing-function: ease-out;
     }
     50% {
+        /* Reach the end of the path, shrink, and become translucent again. */
         transform: translateY(var(--travel)) scale(0.8);
         opacity: 0.6;
         animation-timing-function: ease-in;
     }
     75% {
+        /* Return halfway, shrink further, and become most translucent. */
         transform: translateY(var(--mid-travel)) scale(0.5);
         opacity: 0.3;
         animation-timing-function: ease-out;
     }
     100% {
+        /* Return to the starting state for a seamless loop. */
         transform: translateY(0) scale(0.8);
         opacity: 0.6;
     }
