@@ -28,7 +28,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         />
     </head>
-    <body style="height: 3000px">
+    <body>
         <header class="site-header">
             <div class="site-header__wrapper">
                 <div class="site-header__inner container">
@@ -276,7 +276,7 @@
             <div class="contact">
                 <div class="contact__wrapper container">
                     <div class="contact__info">
-                        <div class="contact-image">
+                        <div class="contact__image">
                             <img
                                 src="./img/scholars-contact-info-01.webp"
                                 alt="Contact Info Image"
@@ -350,11 +350,13 @@
                         </div>
 
                         <div class="contact-form__group">
-                            <label for="email" class="sr-only">Email</label>
+                            <label for="email-contact" class="sr-only"
+                                >Email</label
+                            >
                             <input
                                 type="email"
-                                id="email"
-                                name="email"
+                                id="email-contact"
+                                name="email_contact"
                                 class="contact-form__input"
                                 placeholder="Email"
                                 required
@@ -373,7 +375,9 @@
                             />
                         </div>
 
-                        <div class="contact-form__group--full">
+                        <div
+                            class="contact-form__group contact-form__group--full"
+                        >
                             <label for="message" class="sr-only"
                                 >Write Message</label
                             >
@@ -388,14 +392,146 @@
 
                         <button
                             type="submit"
-                            class="contact-form__btn hvr-rectangle-out"
+                            class="contact-form__btn hvr-float-shadow"
                         >
                             SEND
                         </button>
                     </form>
                 </div>
             </div>
+
+            <div class="map">
+                <div class="map__wrapper container">
+                    <iframe
+                        title="Bản đồ khu vực TP. Hồ Chí Minh"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15676.573304912468!2d106.7122688!3d10.8003328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1794896425991!5m2!1sen!2s"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                </div>
+            </div>
         </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper container">
+                <div class="footer__item">
+                    <a href="contact.html" class="footer__logo">
+                        <img
+                            src="./img/scholars-logo.png"
+                            alt="Logo Scholars"
+                        />
+                    </a>
+
+                    <p class="footer__desc">
+                        Scholars provides universal access to the world’s best
+                        education, partnering with top universities and
+                        organizations to offer courses online.
+                    </p>
+                    <p class="footer__copyright">
+                        © 2017 Scholars Inc. All rights reserved.
+                    </p>
+                    <div class="footer__apps">
+                        <a href="#!" class="footer__apps-link">
+                            <img
+                                src="./img/scholars-footer-download-appstore.webp"
+                                alt="Download via AppStore"
+                            />
+                        </a>
+                        <a href="#!" class="footer__apps-link">
+                            <img
+                                src="./img/scholars-footer-download-googleplay.webp"
+                                alt="Download via GooglePlay"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h2 class="footer__title">Scholars</h2>
+                    <ul>
+                        <li class="footer__list-item">
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Leadership</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Careers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">FAQ</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h2 class="footer__title">Product</h2>
+                    <ul>
+                        <li class="footer__list-item">
+                            <a href="#!">Education Light</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Education Starter</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Education Premium</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Business</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Business Plus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h2 class="footer__title">Support</h2>
+                    <ul>
+                        <li class="footer__list-item">
+                            <a href="#!">Support</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Toll Free Number</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Open Ticket</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">System Requirements</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#!">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h2 class="footer__title">Subscribe Us</h2>
+                    <p class="footer__subscribe-desc">
+                        Subscribe us to get all the latest news from us!
+                    </p>
+                    <form action="#" class="footer__form-email">
+                        <label for="email" class="sr-only"
+                            >Email Submission</label
+                        >
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="footer__email-input"
+                            placeholder="Your Email..."
+                        />
+                        <button class="footer__btn hvr-rectangle-out">
+                            send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
 
         <!-- Javascript -->
         <!-- Menu Header -->
