@@ -1,0 +1,66 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* ===== Report Table Section =====*/
+.report-table {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0 auto;
+
+    font-size: 2.5rem;
+}
+
+.report-table .main-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.35;
+}
+
+.report-table th,
+.report-table td {
+    border: 5px solid #000;
+    padding: 12px 15px;
+}
+
+.report-table .table-number,
+.report-table .table-title,
+.report-table .table-note {
+    font-weight: bold;
+}
+
+.report-table .table-subtitle {
+    font-weight: normal;
+}
+
+.report-table .table-number {
+    margin-bottom: 5px;
+}
+
+.report-table .table-note {
+    margin-top: 5px;
+}
+
+/* ===== Admin Table Section =====*/
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #ccc;
+}
+
+.admin-table {
+    margin-top: 40px;
+    min-width: 900px;
+    background-color: #fff;
+    border-collapse: collapse;
+}
