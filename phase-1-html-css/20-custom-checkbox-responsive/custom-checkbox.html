@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sou…"
+            rel="stylesheet"
+        />
+
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfiThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk…"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+            .checkbox {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+            }
+
+            .checkbox::before {
+                content: "";
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border: 2px solid #ccc;
+                border-radius: 3px;
+            }
+
+            .checkbox:has([type="checkbox"]:checked)::before {
+                background: orange;
+                border-color: orange;
+            }
+
+            .checkbox:has([type="checkbox"]:checked)::after {
+                content: "";
+                position: absolute;
+                left: 5px;
+                bottom: 5px;
+                rotate: 40deg;
+                z-index: 1;
+                width: 4px;
+                height: 8px;
+                border: 2px solid;
+                border-color: transparent #fff #fff transparent;
+            }
+
+            .form-group.horizontal {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <div class="form-group horizontal">
+                <label class="checkbox">
+                    <input type="checkbox" checked hidden />
+                    <span>Nam</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" checked hidden />
+                    <span>Nữ</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" checked hidden />
+                    <span>Khác</span>
+                </label>
+            </div>
+        </form>
+    </body>
+</html>
