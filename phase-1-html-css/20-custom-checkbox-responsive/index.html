@@ -7,7 +7,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="./reset.css" />
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,86 +25,6 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <style>
-            button {
-                border: none;
-                background: none;
-                color: #fff;
-            }
-
-            .wrapper {
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-            }
-
-            .header,
-            .footer {
-                min-height: 100px;
-                background: #333;
-                color: #fff;
-            }
-
-            .main {
-                flex: 1;
-            }
-
-            .header,
-            .footer,
-            .main {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                font-weight: 600;
-                font-size: 26px;
-            }
-
-            .header {
-                justify-content: space-between;
-            }
-
-            .drawer {
-                position: fixed;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                z-index: 999;
-
-                min-width: 150px;
-                background: orange;
-                translate: -100%;
-                transition: translate ease 0.5s;
-            }
-
-            .drawer-close {
-                position: absolute;
-                top: 0;
-                right: 0;
-                padding: 6px 10px 10px;
-            }
-
-            .drawer-overlay {
-                position: fixed;
-                inset: 0;
-                background: rgba(0, 0, 0, 0.7);
-                z-index: 998;
-                opacity: 0;
-                visibility: hidden;
-                transition:
-                    opacity ease 0.5s,
-                    visibility ease 0.5s;
-            }
-
-            #drawer-input:checked ~ .drawer {
-                translate: 0;
-            }
-
-            #drawer-input:checked ~ .drawer-overlay {
-                opacity: 1;
-                visibility: visible;
-            }
-        </style>
     </head>
     <body>
         <div class="wrapper">
@@ -112,13 +32,23 @@
                 <label for="drawer-input">
                     <i class="fa-solid fa-bars"></i>
                 </label>
+
+                <label for="" class="custom-select">
+                    <select name="" id="">
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select>
+                </label>
             </div>
             <div class="main">Main</div>
             <div class="footer">Footer</div>
 
+            <!-- Toggle: On/Off -->
+
             <!-- Drawer -->
             <input type="checkbox" id="drawer-input" hidden />
-            <div class="drawer-overlay"></div>
+            <label for="drawer-input" class="drawer-overlay"></label>
             <div class="drawer">
                 <label for="drawer-input" class="drawer-close">
                     <i class="fa-solid fa-xmark"></i>
